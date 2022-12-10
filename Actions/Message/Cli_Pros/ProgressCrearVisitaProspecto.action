@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.ProgressBanner",
+	"OnSuccess": "/SkyCM_V2/Actions/OData/Cli_Pros/CrearNuevaVisita_Prospecto.action",
+	"Message": "Registrando visita a cliente prospecto...",
+	"CompletionMessage": "Visita registrada con exito",
+	"CompletionTimeout": 2,
+	"Animated": true
+}

@@ -1,0 +1,13 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"OnFailure": "/SkyCM_V2/Actions/Message/Cli_Pros/ObjetivoNoSeleccionado_Pros.action",
+	"OnSuccess": "/SkyCM_V2/Rules/Cli_Pros/RectificarLatyLongPros.js",
+	"OnFailureLog": {
+		"Level": "Off",
+		"Message": ""
+	},
+	"ShowActivityIndicator": true,
+	"RequiredFields": [
+		"FC_ObjetivoVisita_Pro"
+	]
+}

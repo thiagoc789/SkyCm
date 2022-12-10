@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Desea realizar el Check-Out de su jornada?",
+	"Title": "Check-Out",
+	"OKCaption": "SI",
+	"OnOK": "/SkyCM_V2/Actions/OData/CerrarJornadaActivaOutTime.action",
+	"CancelCaption": "NO"
+}

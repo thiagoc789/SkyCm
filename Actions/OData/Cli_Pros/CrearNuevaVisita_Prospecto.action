@@ -1,0 +1,31 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"OnSuccess": "/SkyCM_V2/Actions/Navigation/NavToMenuFVJustificacion.action",
+	"OnFailureLog": {
+		"Level": "Error",
+		"Message": ""
+	},
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Registrando visita espere un momento...",
+	"Target": {
+		"EntitySet": "HISTV",
+		"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+	},
+	"Properties": {
+		"ID_VISITA": "#Control:FC_IDVisita_Pro/#Value",
+		"KUNNR": "#Control:FC_KUNNRVisita_Pro/#Value",
+		"BUKRS": "PROS",
+		"NAME1": "#Control:FC_NAME1Visita_Pro/#Value",
+		"PERNR": "#Page:DetalleClienteProspecto/#Control:FC_PernrCliPros/#Value",
+		"PERNR_SCP": "#Control:FC_PERNRSCPVisita_Pro/#Value",
+		"MES": "#Control:FC_MesVisita_Pro/#Value",
+		"ANO": "#Control:FC_AñoVisita_Pro/#Value",
+		"HORA": "#Control:FC_HoraVisita_Pro/#Value",
+		"ID_OBJETIVO": "#Control:FC_ObjetivoVisita_Pro/#SelectedValue",
+		"ID_CAMP": "#Page:VisitaConfirmarProspecto/#Control:FC_Bandera_Pro/#Value",
+		"ESTADO": "ACTIVO",
+		"FECHA": "#Control:FC_FechaVisita_Pro/#Value",
+		"LON_VENDOR": "#Page:VisitaConfirmarProspecto/#Control:FC_Longitud_Vendor_Pro/#Value",
+		"LAT_VENDOR": "#Page:VisitaConfirmarProspecto/#Control:FC_Latitud_Vendor_Pro/#Value"
+	}
+}

@@ -1,0 +1,4 @@
+{
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"Service": "/SkyCM_V2/Services/Rest_Inventario.service"
+}

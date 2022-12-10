@@ -1,0 +1,17 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnSuccess": "/SkyCM_V2/Actions/Message/BannerDescargaExitosa.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Este proceso puede ser demorado. Refrescando referencias espere un momento...",
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"DefiningRequests": [
+		{
+			"Name": "INVENTARIO",
+			"Query": "INVENTARIO",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

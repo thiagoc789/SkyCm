@@ -1,0 +1,84 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "                           Datos sincronizacion",
+							"_Type": "Control.Type.FormCell.Title",
+							"_Name": "FormCellTitle0",
+							"IsEditable": false,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty1",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Hana"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty2",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Dispositivo"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"_Type": "Section.Type.ContactCell",
+					"Target": {
+						"EntitySet": "WORKDAY",
+						"QueryOptions": "$top=15&$filter=PERNR_SCP eq '{{#Application/#ClientData/#Property:UserId}}'&$orderby=FECHA desc,HORA_FIN desc",
+						"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+					},
+					"_Name": "SectionContactCellTable2",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ContactCell": {
+						"ContextMenu": {
+							"PerformFirstActionWithFullSwipe": true,
+							"Items": []
+						},
+						"DetailImage": "/SkyCM_V2/Images/jornada_laboral.png",
+						"Headline": "{FECHA}",
+						"Subheadline": "{HORA_FIN}",
+						"Description": "description",
+						"ActivityItems": [
+							{
+								"ActivityType": "Detail",
+								"ActivityValue": "{HORA_INICIO}"
+							}
+						]
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Ingrese busqueda"
+					}
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": false,
+				"Text": ""
+			}
+		}
+	],
+	"Target": "",
+	"_Type": "Page",
+	"_Name": "HistoricoJornadaLaboral",
+	"Caption": "HistoricoJornadaLaboral",
+	"PrefersLargeCaption": true
+}

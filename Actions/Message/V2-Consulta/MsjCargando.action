@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "No se pudo enviar el correo porque no tienes internet o tu red de datos se encuentra inestable. Espera un momento e intenta de nuevo.",
+	"Title": "ATENCION",
+	"OKCaption": "OK"
+}

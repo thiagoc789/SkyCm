@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ValidationRule": "/SkyCM_V2/Rules/ValidaJornadaActiva.js",
+	"PageToOpen": "/SkyCM_V2/Pages/JornadaLaboralConfirmar.page",
+	"ModalPage": true,
+	"NavigationType": "Cross"
+}

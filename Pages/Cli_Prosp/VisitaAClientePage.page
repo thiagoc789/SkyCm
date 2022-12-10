@@ -1,0 +1,116 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ContactCell",
+					"Target": {
+						"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+						"EntitySet": "HISTV",
+						"QueryOptions": "",
+						"ReadLink": ""
+					},
+					"_Name": "SectionContactCellTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No hay visitas activas",
+						"FooterVisible": false
+					},
+					"ContactCell": {
+						"ContextMenu": {
+							"PerformFirstActionWithFullSwipe": true,
+							"Items": [
+							]
+						},
+						"DetailImage": "/SkyCM_V2/Images/visitar_cliente.png",
+						"Headline": "{NAME1}",
+						"Subheadline": "{ESTADO}",
+						"Description": "",
+						"OnPress": "/SkyCM_V2/Actions/Navigation/NavToDetalleVisitaActivaAction.action",
+						"ActivityItems": [
+						]
+					}
+				},
+				{
+					"Target": "",
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"Target": "",
+							"_Name": "SectionButton0",
+							"Title": "Visitar cliente",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"Visible": true,
+							"OnPress": "/SkyCM_V2/Actions/Navigation/NavToMisClientespage.action"
+						},
+						{
+							"_Name": "SectionButton1",
+							"Title": "Visitar cliente prospecto",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"Visible": true,
+							"OnPress": "/SkyCM_V2/Actions/Navigation/Cli_Pros/NavToMisClientesProspectosInicial.action"
+						}
+					]
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando..."
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "VisitaAClientePage",
+	"Caption": "Visita a cliente",
+	"PrefersLargeCaption": true,
+	"OnLoaded": "/SkyCM_V2/Rules/Cli_Pros/TraePernrProsp.js",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "sap-icon://synchronize",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/SkyCM_V2/Actions/Service/Download_visitas.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	},
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem0",
+				"Caption": "Refrescar Clientes.",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Icon": "sap-icon://synchronize",
+				"ItemType": "Button",
+				"OnPress": "/SkyCM_V2/Actions/Service/Sincro_Cli_Ref/DownloadClientes.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem1",
+				"Caption": "Refrescar clientes.",
+				"Enabled": false,
+				"Visible": true,
+				"Clickable": false
+			}
+		]
+	}
+}

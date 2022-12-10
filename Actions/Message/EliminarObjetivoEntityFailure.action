@@ -1,0 +1,6 @@
+{
+	"Message": "Error al eliminar objetivo - {{ActionResults:delete/#Property:error}}",
+	"OKCaption": "OK",
+	"Title": "Eliminar objetivo",
+	"_Type": "Action.Type.Message"
+}

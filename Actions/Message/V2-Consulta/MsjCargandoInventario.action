@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.ProgressBanner",
+	"OnSuccess": "/SkyCM_V2/Actions/Rest/V2-consulta/Rest_Inventario.action",
+	"ShowActivityIndicator": false,
+	"Message": "Consultado... (Este proceso puede ser demorado, espere un momento)",
+	"CompletionMessage": "Consulta exitosa.",
+	"CompletionTimeout": 1,
+	"Animated": true
+}

@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "¡ATENCION! la fecha de la jornada laboral que se encuentra activa en este momento no corresponde a la fecha actual. Debe cerrar su jornada laboral e iniciar una nueva",
+	"OKCaption": "Ir a cerrar jornada laboral",
+	"OnOK": "/SkyCM_V2/Actions/Navigation/IrAJornadaLaboral.action"
+}

@@ -1,0 +1,64 @@
+{
+	"Service": "/SkyCM_V2/Services/Online_initialize.service",
+	"Collection": [
+		"CLIENTE_PROS"
+	],
+	"Properties": [
+		{
+			"_Type": "Edm.Guid",
+			"Key": true,
+			"_Name": "ID"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "KUNNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PERNR_SCP"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "NACHN"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "TEL"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "EMAIL"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "ADDRES"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "TIPO_CLI"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "LATITUD"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "LONGITUD"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "ESTADO"
+		}
+	],
+	"_Name": "CLIENTE_PROS"
+}

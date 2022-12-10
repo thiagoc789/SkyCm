@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"OnFailure": "/SkyCM_V2/Actions/Message/NojustificacionNoCoordenadas.action",
+	"OnSuccess": "/SkyCM_V2/Actions/OData/CrearVisitaconjuntificacion.action",
+	"RequiredFields": [
+		"FC_Justificacion"
+	]
+}

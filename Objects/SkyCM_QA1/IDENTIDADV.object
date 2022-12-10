@@ -1,0 +1,19 @@
+{
+	"Service": "/SkyCM_QA1/Services/SkyCM_QA1.service",
+	"Collection": [
+		"IDENTIDADV"
+	],
+	"Properties": [
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "PERNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PERNR_SCP"
+		}
+	],
+	"_Name": "IDENTIDADV"
+}

@@ -1,0 +1,38 @@
+{
+	"_Type": "Action.Type.OfflineOData.Initialize",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnFailure": "/SkyCM_V2/Actions/Service/InitializeOfflineFailureMessage.action",
+	"OnSuccess": "/SkyCM_V2/Actions/Service/Initialize_Online.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Procesando..",
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"DefiningRequests": [
+		{
+			"Name": "OBJEVISIT",
+			"Query": "OBJEVISIT",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "VENDORCAMP",
+			"Query": "VENDORCAMP",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "VENDORINFO",
+			"Query": "VENDORINFO",
+			"AutomaticallyRetrievesStreams": false
+		}
+	],
+	"ProgressText": {
+		"Opening": "Comprobando requisitos de red...",
+		"Initializing": "Enviando solicitud al servidor...",
+		"InitialCommunication": "Verificando conexion...",
+		"StartingDownloadingFile": "Iniciando conexion...",
+		"DownloadingFile": "Validando datos del servidor...",
+		"StartingDownloadingData": "Calculando tamaño de la descarga...",
+		"DownloadingData": "Descargando datos...",
+		"Opened": "Inicializacion exitosa!"
+	}
+}

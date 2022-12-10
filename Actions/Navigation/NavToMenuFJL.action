@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"OnSuccess": "/SkyCM_V2/Actions/Message/JornadaLaboralFInalizada.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Cargando...",
+	"PageToOpen": "/SkyCM_V2/Pages/Main.page",
+	"ClearHistory": true,
+	"NavigationType": "Cross"
+}

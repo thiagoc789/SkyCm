@@ -1,0 +1,134 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FC_List_Referencia",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Referencias:",
+							"DataPaging": {
+								"ShowLoadingIndicator": true,
+								"LoadingIndicatorText": "",
+								"PageSize": 50
+							},
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"Search": {
+								"Enabled": true,
+								"Placeholder": "Digite la referencia que desea buscar.",
+								"BarcodeScanner": true
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/SkyCM_V2/Services/Online_initialize.service",
+									"EntitySet": "INVENTARIO",
+									"QueryOptions": ""
+								},
+								"DisplayValue": "{MATNR}",
+								"ReturnValue": "{MATNR}"
+							}
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/V2-Consulta/RuleSociedad.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_SOC",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Sociedad",
+							"PlaceHolder": "PlaceHolder"
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/V2-Consulta/Rule_TraerPernr.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_Pernr_Inv",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "PERNR"
+						},
+						{
+							"validationProperties": {
+								"SeparatorIsHidden": false
+							},
+							"Value": [
+								"Predeterminado"
+							],
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "listpicker_Orden",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Ordenar por:",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Por favor seleccione una opción.",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"PickerItems": [
+								"Color",
+								"Disponibilidad",
+								"Predeterminado"
+							]
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton2",
+							"IsVisible": true,
+							"Title": "Buscar.",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"OnPress": "/SkyCM_V2/Actions/Checks/V2-Consulta/CheckValidaInventario.action"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Inventario",
+	"Caption": "Inventario",
+	"PrefersLargeCaption": true,
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem0",
+				"Caption": "Refrescar referencias.",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Icon": "sap-icon://synchronize",
+				"ItemType": "Button",
+				"OnPress": "/SkyCM_V2/Actions/Service/Sincro_Cli_Ref/DownloadReferencias.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem1",
+				"Caption": "Refrescar referencias.",
+				"Enabled": false,
+				"Visible": true,
+				"Clickable": false
+			}
+		]
+	}
+}

@@ -1,0 +1,126 @@
+{
+	"Controls": [
+		{
+			"Target": "",
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Target": "",
+							"Value": "{ID_JORNADA}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_ID_Jornada",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "ID"
+						},
+						{
+							"Target": "",
+							"Value": "{HORA_INICIO}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Hora inicio:",
+							"PlaceHolder": "PlaceHolder"
+						},
+						{
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/TraeHoraRule.rule.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_HoraFin",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Hora fin:"
+						},
+						{
+							"Target": "",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "fechaIni",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Fecha inicial:",
+							"PlaceHolder": "{FECHA}"
+						},
+						{
+							"Target": "",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FechaFin",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Fecha fin:",
+							"PlaceHolder": "/SkyCM_V2/Rules/TraeFechaRule.js"
+						},
+						{
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/CalcularJornadaDuracion.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_DURACION",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Duración"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"Target": "",
+							"ValidationProperties": {
+								"SeparatorIsHidden": true
+							},
+							"_Type": "Control.Type.FormCell.Note",
+							"_Name": "FC_Observaciones",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Digite observaciones de la jornada",
+							"MaxNumberOfLines": 40
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"Target": "",
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Title": "🖌 Finalizar Jornada Out Time 🖌",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"OnPress": "/SkyCM_V2/Actions/Navigation/NavTOJustificacionJornadaOut.action"
+						}
+					],
+					"Target": "",
+					"Caption": "        ⏰ Check-Out Fuera de Tiempo ⏰ ",
+					"Visible": false
+				}
+			]
+		}
+	],
+	"Target": "",
+	"_Type": "Page",
+	"_Name": "DetalleJornadaActiva",
+	"Caption": "Detalle Jornada",
+	"ActionBar": {
+		"Items": [
+			{
+				"Target": "",
+				"_Name": "ActionBarItem1",
+				"Position": "Right",
+				"IsIconCircular": true,
+				"Visible": true,
+				"OnPress": "/SkyCM_V2/Actions/Message/ConfirmacionCheckOut.action",
+				"Caption": "Check-Out"
+			}
+		],
+		"_Name": "ActionBar0"
+	},
+	"PrefersLargeCaption": true
+}

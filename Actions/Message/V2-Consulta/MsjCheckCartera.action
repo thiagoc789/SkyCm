@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Para poder hacer el envió del correo debe seleccionar un cliente.",
+	"Title": "Atencion",
+	"OKCaption": "OK"
+}

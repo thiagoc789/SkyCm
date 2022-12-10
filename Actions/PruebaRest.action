@@ -1,0 +1,28 @@
+{
+	"_Type": "Action.Type.RestService.SendRequest",
+	"ActionResult": {
+		"_Name": "ResultRest"
+	},
+	"OnFailure": "/SkyCM_V2/Actions/msjfailrest.action",
+	"OnSuccess": "/SkyCM_V2/Rules/V2-Consulta/RestPrueba.js",
+	"ShowActivityIndicator": true,
+	"Target": {
+		"Service": "/SkyCM_V2/Services/Rest_Inventario.service",
+		"Path": "/InvSkyVMovil",
+		"OutputPath": "/MT_InvSkyVMovilAfsResp/T_InvSkyVMovilAfsResp/0/T_CabeceraInvSkyVMovil",
+		"RequestProperties": {
+			"Method": "PUT",
+			"Body": {
+				 "T_InvSkyVMovilAfs": [
+				        {
+				            "Referencia": "LIS BOA",
+				            "Vendedor": "180"  
+				        }
+				 ]
+			},
+			"Headers": {
+				"Content-Type": "application/json"
+			}
+		}
+	}
+}

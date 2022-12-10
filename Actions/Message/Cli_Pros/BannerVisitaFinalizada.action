@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.BannerMessage",
+	"OnSuccess": "/SkyCM_V2/Rules/Mexico/RuleMainMexico.js",
+	"Message": "Visita finalizada con exito",
+	"Duration": 2,
+	"Animated": true
+}

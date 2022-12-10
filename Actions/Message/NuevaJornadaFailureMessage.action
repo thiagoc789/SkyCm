@@ -1,0 +1,6 @@
+{
+	"Message": "¡ Tiene una jornada activa ! Si no realizo la finalización de su jornada dentro de el rango establecido vaya a la jornada activa y cierre jornada out time.",
+	"OKCaption": "Ok",
+	"Title": "⚠️   Advertencia  ⚠️ ",
+	"_Type": "Action.Type.Message"
+}

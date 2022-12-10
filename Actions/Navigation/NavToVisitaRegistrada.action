@@ -1,0 +1,6 @@
+{
+	"NavigationType": "Cross",
+	"OnSuccess": "/SkyCM_V2/Actions/Service/UploadOffline.action",
+	"PageToOpen": "/SkyCM_V2/Pages/VisitaAClientePage.page",
+	"_Type": "Action.Type.Navigation"
+}

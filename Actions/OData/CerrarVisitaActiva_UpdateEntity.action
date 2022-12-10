@@ -1,0 +1,18 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"OnSuccess": "/SkyCM_V2/Actions/Navigation/NavToMenuCerrarVisitaClear.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Finalizando visita espere un momento....",
+	"Target": {
+		"EntitySet": "HISTV",
+		"ReadLink": "{@odata.readLink}",
+		"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+	},
+	"Properties": {
+		"ID_VISITA": "#Page:DetalleViisitaActiva/#Control:FC_IDVisita/#Value",
+		"FIN": "#Control:FC_HoraFin/#Value",
+		"DURACION": "/SkyCM_V2/Rules/CalculaDuracionVisita1.js",
+		"OBSERVACION": "#Control:FC_Observaciones/#Value",
+		"ESTADO": "INACTIVO"
+	}
+}

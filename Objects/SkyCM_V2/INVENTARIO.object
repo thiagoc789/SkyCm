@@ -1,0 +1,29 @@
+{
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"Collection": [
+		"INVENTARIO"
+	],
+	"Properties": [
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "MATNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "PERNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "VKGRP"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "FECHA"
+		}
+	],
+	"_Name": "INVENTARIO"
+}

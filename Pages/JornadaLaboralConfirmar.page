@@ -1,0 +1,95 @@
+{
+	"Controls": [
+		{
+			"Target": "",
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/CrearIDJornada.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_IDJornadaLaboral",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "ID Jornada Laboral"
+						},
+						{
+							"Target": "",
+							"Value": "{{#Property:PERNR}}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_PERNRVisita",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Código vendedor:"
+						},
+						{
+							"Target": "",
+							"Value": "#Application/#ClientData/#Property:UserId",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_PERNRSCPVisita",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Código SCP:"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/TraeFechaRule.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_FechaVisita",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Fecha:"
+						},
+						{
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/TraeHoraRule.rule.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_HoraInicio",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Hora:"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				}
+			]
+		}
+	],
+	"Target": "",
+	"_Type": "Page",
+	"_Name": "JornadaLabConfirmar",
+	"Caption": "Confirmar Jornada Laboral",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/SkyCM_V2/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Check-In",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/SkyCM_V2/Actions/Message/ProgressIniciandoJornada.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	},
+	"PrefersLargeCaption": true
+}

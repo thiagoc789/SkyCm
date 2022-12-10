@@ -1,0 +1,92 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/SkyCM_V2/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"Caption": "Item",
+				"Visible": true
+			},
+			{
+				"IsIconCircular": false,
+				"OnPress": "/SkyCM_V2/Actions/Navigation/Prueba.action",
+				"Position": "Right",
+				"Caption": "Check-In",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "TEST",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Latitud cliente:",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "4.84411696",
+							"_Name": "FC_Latitud_Cli",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Longitud cliente:",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "-75.67310738",
+							"_Name": "FC_Longitud_Cli",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"Caption": "Latitud Vendor",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "4.8243145",
+							"_Name": "FC_Latitud_Ven",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Longitud Vendor",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "-75.6860798",
+							"_Name": "FC_Longitud_Ven",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"IsVisible": true,
+							"OnPress": "/SkyCM_V2/Rules/ValidarDistancia.js",
+							"Target": "",
+							"Alignment": "Center",
+							"Title": "TEST",
+							"_Name": "FormCellButton0",
+							"_Type": "Control.Type.FormCell.Button"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				}
+			],
+			"Target": "",
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"Target": "",
+	"_Name": "VisitaConfiprueba",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

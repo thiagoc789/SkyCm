@@ -1,0 +1,4 @@
+{
+	"OnSuccess": "/SkyCM_V2/Actions/Service/UploadOffline.action",
+	"_Type": "Action.Type.ClosePage"
+}

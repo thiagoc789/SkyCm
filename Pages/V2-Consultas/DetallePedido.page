@@ -1,0 +1,95 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Subhead": "Tipo entrega: {Tipoentrega}",
+						"DetailImageIsCircular": false,
+						"BodyText": "Total pedido: $(N,{Totalpedido})",
+						"HeadlineText": "Estado de pedido: {Puntocontrol}"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": "#Page:Main/#ClientData/#Property:NoFactura",
+					"_Name": "SectionObjectTable1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "No Factura: {Factura}",
+						"AvatarStack": {
+							"ImageIsCircular": false
+						},
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				},
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": "#Page:Main/#ClientData/#Property:Pedido",
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "Referencia: {Referencia}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://activity-items"
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"OnPress": "/SkyCM_V2/Actions/Navigation/V2-Consulta/NavToPedidoItem.action",
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": true,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DetallePedido",
+	"Caption": "No pedido: {Pedido}",
+	"PrefersLargeCaption": true
+}

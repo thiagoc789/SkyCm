@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"OnSuccess": "/SkyCM_V2/Rules/Cli_Pros/TraePernrProsp.js",
+	"ValidationRule": "/SkyCM_V2/Rules/Cli_Pros/ValidaVisitaActivaProspecto.js",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Cargando...",
+	"PageToOpen": "/SkyCM_V2/Pages/Cli_Prosp/MisClientesProspectos.page",
+	"ClearHistory": false,
+	"NavigationType": "Cross"
+}

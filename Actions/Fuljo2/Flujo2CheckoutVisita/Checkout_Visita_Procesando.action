@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.BannerMessage",
+	"OnSuccess": "/SkyCM_V2/Actions/Fuljo2/Flujo2CheckoutVisita/NavToTransVisitaCheckout.action",
+	"Message": "Procesando Por Favor Espere ...",
+	"Duration": 2,
+	"Animated": true
+}

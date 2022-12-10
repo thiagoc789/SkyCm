@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.ClosePage",
+	"OnSuccess": "/SkyCM_V2/Rules/Mexico/RuleMainMexico.js",
+	"DismissModal": "Action.Type.ClosePage.Completed",
+	"CancelPendingActions": false
+}

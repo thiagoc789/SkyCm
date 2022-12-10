@@ -1,0 +1,21 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"OnSuccess": "/SkyCM_V2/Actions/Navigation/Cli_Pros/NavToMisClientesProspectos.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Creando segunda dirección del cliente prospecto...",
+	"Target": {
+		"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+		"EntitySet": "CLIENTE_PROS"
+	},
+	"Properties": {
+		"KUNNR": "#Page:VisitaConfirmarProspecto/#Control:FC_KUNNRVisita_Pro/#Value",
+		"NACHN": "#Page:VisitaConfirmarProspecto/#Control:FC_NAME1Visita_Pro/#Value",
+		"TEL": "#Page:VisitaConfirmarProspecto/#Control:FC_TEL_PRO/#Value",
+		"EMAIL": "#Page:VisitaConfirmarProspecto/#Control:FC_EMAIL_PRO/#Value",
+		"ADDRES": "#Page:NuevaDireccionClientePros/#Control:FC_DIR2/#Value",
+		"TIPO_CLI": "#Page:VisitaConfirmarProspecto/#Control:FC_TipoCli_PRO/#Value",
+		"LATITUD": "#Page:NuevaDireccionClientePros/#Control:FC_Latitud2_Pro/#Value",
+		"LONGITUD": "#Page:NuevaDireccionClientePros/#Control:FC_Longitud2_PRO/#Value",
+		"ESTADO": "PROSPECTO"
+	}
+}

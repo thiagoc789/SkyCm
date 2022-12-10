@@ -1,0 +1,6 @@
+{
+	"Message": "Usted no tiene permiso de acceso a esta función",
+	"OKCaption": "OK",
+	"Title": "Acceso denegado",
+	"_Type": "Action.Type.Message"
+}

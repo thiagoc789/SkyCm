@@ -1,0 +1,12 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"OnFailure": "/SkyCM_V2/Actions/Message/ObjetivoNoSeleccionado.action",
+	"OnSuccess": "/SkyCM_V2/Rules/RectificarLatyLong.js",
+	"OnFailureLog": {
+		"Level": "Off",
+		"Message": ""
+	},
+	"RequiredFields": [
+		"FC_ObjetivoVisita"
+	]
+}

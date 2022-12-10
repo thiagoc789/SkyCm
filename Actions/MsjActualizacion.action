@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "El modulo de consultas no se encuentra disponible ya que se encuentra en mantenimiento.",
+	"Title": "¡Atencion!",
+	"OKCaption": "Ok"
+}

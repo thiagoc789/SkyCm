@@ -1,0 +1,24 @@
+{
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"Collection": [
+		"ROLES"
+	],
+	"Properties": [
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "ID_ROL"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "NOM_ROL"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "DESC_ROL"
+		}
+	],
+	"_Name": "ROLES"
+}

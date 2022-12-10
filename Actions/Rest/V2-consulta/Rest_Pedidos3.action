@@ -1,0 +1,31 @@
+{
+	"_Type": "Action.Type.RestService.SendRequest",
+	"ActionResult": {
+		"_Name": "ResultRest"
+	},
+	"OnFailure": "/SkyCM_V2/Actions/Message/V2-Consulta/MsjSinInternet.action",
+	"OnSuccess": "/SkyCM_V2/Rules/V2-Consulta/Rule_Pedido3.js",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Consultando pedido...",
+	"Target": {
+		"Service": "/SkyCM_V2/Services/Rest_Inventario.service",
+		"Path": "/PedidoVendMovil",
+		"OutputPath": "/MT_PedidoVendMovilResp/T_PedidoVendMovilResp/0/T_Cabecera",
+		"RequestProperties": {
+			"Method": "PUT",
+			"Body": {
+				"T_PedVendMovil": [
+					{
+						"Pedido": "#Page:EstadoPedido/#Control:Fc_Num_Pedido/#Value",
+						"Vendedor": "#Page:EstadoPedido/#Control:Fc_Pernr2Pedidos/#Value",
+						"Campocab1": "#Page:EstadoPedido/#Control:FC_SOC/#Value"
+					
+					}
+				]
+			},
+			"Headers": {
+				"Content-Type": "application/json"
+			}
+		}
+	}
+}

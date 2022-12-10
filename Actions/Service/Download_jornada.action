@@ -1,0 +1,14 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"OnSuccess": "/SkyCM_V2/Actions/CloseModalPage_Complete.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "...",
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"DefiningRequests": [
+		{
+			"Name": "WORKDAY",
+			"Query": "WORKDAY",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

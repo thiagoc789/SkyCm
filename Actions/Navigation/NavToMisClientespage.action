@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ValidationRule": "/SkyCM_V2/Rules/ValidaVisitaActiva.js",
+	"PageToOpen": "/SkyCM_V2/Pages/MisClientesPage.page",
+	"NavigationType": "Cross"
+}

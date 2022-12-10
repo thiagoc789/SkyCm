@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.ProgressBanner",
+	"OnSuccess": "/SkyCM_V2/Rules/Cli_Pros/ValidarDistanciaProspecto.js",
+	"Message": "Calculando distancia espere un momento...",
+	"Animated": true
+}

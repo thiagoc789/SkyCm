@@ -1,0 +1,8 @@
+{
+	"CancelCaption": "Cancel",
+	"Message": "Debe realizar Checkin de jornada laboral",
+	"OKCaption": "Ir",
+	"OnOK": "/SkyCM_V2/Actions/Navigation/IrAJornadaLaboral.action",
+	"Title": "⚠️  ADVERTENCIA",
+	"_Type": "Action.Type.Message"
+}

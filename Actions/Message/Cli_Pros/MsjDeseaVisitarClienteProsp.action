@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "¿Desea crear visita de cliente?",
+	"OKCaption": "SI",
+	"OnOK": "/SkyCM_V2/Actions/Navigation/Cli_Pros/NavToMisClientesProspectos.action",
+	"CancelCaption": "NO",
+	"OnCancel": "/SkyCM_V2/Actions/Navigation/Cli_Pros/NavToMainPage.action"
+}

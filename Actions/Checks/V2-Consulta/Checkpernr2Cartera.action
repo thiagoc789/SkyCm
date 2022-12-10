@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"OnFailure": "/SkyCM_V2/Actions/Rest/V2-consulta/Rest_Cartera.action",
+	"OnSuccess": "/SkyCM_V2/Rules/Paises/ValidarSociedad.js",
+	"RequiredFields": [
+		"Fc_Pernr_Cartera2"
+	]
+}

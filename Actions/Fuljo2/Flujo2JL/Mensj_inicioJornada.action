@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.BannerMessage",
+	"OnSuccess": "/SkyCM_V2/Actions/OData/CrearNuevaJornadaLaboral.action",
+	"Message": "Iniciando jornada laboral....",
+	"Duration": 5
+}

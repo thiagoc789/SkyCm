@@ -1,0 +1,5 @@
+{
+	"OnFailure": "/SkyCM_V2/Actions/Message/PushRegisterFailureMessage.action",
+	"OnSuccess": "/SkyCM_V2/Actions/Message/PushRegisterSuccessMessage.action",
+	"_Type": "Action.Type.PushNotificationRegister"
+}

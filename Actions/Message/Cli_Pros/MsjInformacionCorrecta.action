@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "La información se encontró correcta.",
+	"OKCaption": "Ok",
+	"OnOK": "/SkyCM_V2/Actions/OData/Cli_Pros/CrearClienteProspecto.action"
+}

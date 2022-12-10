@@ -1,0 +1,24 @@
+{
+	"Service": "/SkyCM_V2/Services/Online_initialize.service",
+	"Collection": [
+		"OBJEVISIT"
+	],
+	"Properties": [
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "ID_OBJE"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "NOM_OBJE"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "DESC_OBJE"
+		}
+	],
+	"_Name": "OBJEVISIT"
+}

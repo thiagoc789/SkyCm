@@ -1,0 +1,69 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"DefiningRequests": [
+		{
+			"Name": "CAMPANA",
+			"Query": "CAMPANA",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "CLIENTEINFO",
+			"Query": "CLIENTEINFO",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "HISTV",
+			"Query": "/SkyCM_V2/Rules/Acceso/filtro_histv.js",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "OBJEVISIT",
+			"Query": "OBJEVISIT",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "PPTOVENDOR",
+			"Query": "PPTOVENDOR",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "ROLES",
+			"Query": "ROLES",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "VENDORCAMP",
+			"Query": "VENDORCAMP",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "VENDORINFO",
+			"Query": "VENDORINFO",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "WORKDAY",
+			"Query": "WORKDAY?$filter=PERNR_SCP eq '{{#Application/#ClientData/#Property:UserId}}'",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "INVENTARIO",
+			"Query": "INVENTARIO",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "INVENTARIO_MX",
+			"Query": "INVENTARIO_MX",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "CLIENTE_PROS",
+			"Query": "CLIENTE_PROS?$filter=PERNR_SCP eq '{{#Application/#ClientData/#Property:UserId}}'",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

@@ -1,0 +1,148 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Subhead": "Gestione y administre sus visitas a clientes",
+						"Footnote": "1.0.0",
+						"DetailImage": "/SkyCM_V2/Images/Icono_SkyCM.png",
+						"DetailImageIsCircular": false,
+						"Tags": [
+							{
+								"Text": "#Application/#ClientData/#Property:UserId"
+							}
+						],
+						"BodyText": "Sistema para casos B2E",
+						"HeadlineText": "Commercial Management",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"_Type": "Section.Type.ObjectCollection",
+					"_Name": "SectionObjectCollection0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"Target": "",
+								"_Name": "SectionObjectCell0",
+								"Title": "Jornada Laboral",
+								"Visible": true,
+								"Subhead": "Registre el inicio de su jornada laboral",
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/IrAJornadaLaboral.action",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/reloj.png"
+										}
+									],
+									"ImageIsCircular": true
+								}
+							}
+						},
+						{
+							"ObjectCell": {
+								"Target": "",
+								"_Name": "SectionObjectCell1",
+								"Title": "Gestión de visitas",
+								"Visible": true,
+								"Subhead": "Consulte información detallada de sus visitas a clientes",
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/NavToGestionVisitas.action",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/gestion_visitas.png"
+										}
+									],
+									"ImageIsCircular": true
+								}
+							}
+						},
+						{
+							"ObjectCell": {
+								"Target": "",
+								"_Name": "SectionObjectCell2",
+								"Title": "Visita a cliente",
+								"Visible": true,
+								"Subhead": "Cree una nueva visita a cliente",
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Rules/ValidarJornadaLaboralActiva.js",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/visitar_cliente.png"
+										}
+									],
+									"ImageIsCircular": false
+								}
+							}
+						},
+						{
+							"ObjectCell": {
+								"Target": "",
+								"_Name": "SectionObjectCell4",
+								"Title": "Cuenta",
+								"Visible": true,
+								"Subhead": "Configuración de la cuenta",
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/NavToCuentaPage.action",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/user_icon.png"
+										}
+									],
+									"ImageIsCircular": false
+								}
+							}
+						},
+						{
+							"ObjectCell": {
+								"Target": "",
+								"_Name": "SectionObjectCell3",
+								"Title": "Gestión de usuarios",
+								"Visible": true,
+								"Subhead": "Gestione los usuarios que utilizan la aplicacion",
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/NavToGestionUsuarios.action",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/Gestion_usuarios_main.png"
+										}
+									],
+									"ImageIsCircular": false
+								}
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Menu",
+	"Caption": "Menu Principal",
+	"PrefersLargeCaption": true
+}

@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"OnFailure": "/SkyCM_V2/Actions/Service/SyncFailureMessage.action",
+	"OnSuccess": "/SkyCM_V2/Actions/Service/DownloadOffline.action",
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+}

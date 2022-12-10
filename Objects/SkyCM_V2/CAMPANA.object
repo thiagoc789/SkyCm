@@ -1,0 +1,34 @@
+{
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"Collection": [
+		"CAMPANA"
+	],
+	"Properties": [
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "ID_CAMP"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "NOM_CAMP"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "FECHA_INI"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "FECHA_FIN"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "EST_CAMP"
+		}
+	],
+	"_Name": "CAMPANA"
+}

@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.ProgressBanner",
+	"OnSuccess": "/SkyCM_V2/Actions/Service/Sincro_Cli_Ref/DownloadReferencias.action",
+	"Message": "Sincronizando referencias espere un momento...",
+	"Animated": true
+}

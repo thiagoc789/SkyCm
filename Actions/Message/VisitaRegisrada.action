@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"OnSuccess": "/SkyCM_V2/Actions/Navigation/NavToMenu.action",
+	"Message": "Visita Registrada",
+	"Duration": 4,
+	"Animated": true
+}

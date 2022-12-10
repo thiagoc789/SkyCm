@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ProgressBanner",
+	"OnSuccess": "/SkyCM_V2/Actions/OData/Cli_Pros/CrearVisitaconjuntificacionProspecto.action",
+	"Message": "Registrando visita espere un momento...",
+	"CompletionMessage": "Visita registrada con exito.",
+	"CompletionTimeout": 4
+}

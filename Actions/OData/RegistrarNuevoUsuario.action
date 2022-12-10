@@ -1,0 +1,20 @@
+{
+	"OnFailure": "/SkyCM_V2/Actions/Message/ErrorRegistrarNuevoUsuario.action",
+	"OnSuccess": "/SkyCM_V2/Actions/ClosePage.action",
+	"Properties": {
+		"NACHN": "#Control:FC_NACHN/#Value",
+		"NATIO": "#Control:FC_NATIO/#Value",
+		"PERNR": "#Control:FC_PERNR/#Value",
+		"PERNR_SCP": "#Control:FC_PERNR_SCP/#Value",
+		"USRID": "#Control:FC_USERID/#Value",
+		"USRTY": "#Control:FC_USERTY/#SelectedValue",
+		"VKGRP": "#Control:FC_VKGRP/#Value",
+		"VKORG": "#Control:FC_VKORG/#Value",
+		"VORNA": "#Control:FC_VORNA/#Value"
+	},
+	"Target": {
+		"EntitySet": "VENDORINFO",
+		"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

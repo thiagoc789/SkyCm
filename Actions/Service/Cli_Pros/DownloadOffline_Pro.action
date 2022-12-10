@@ -1,0 +1,56 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnSuccess": "/SkyCM_V2/Actions/Message/Cli_Pros/MsjDeseaVisitarClienteProsp.action",
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"DefiningRequests": [
+		{
+			"Name": "CAMPANA",
+			"Query": "CAMPANA"
+		},
+		{
+			"Name": "CLIENTEINFO",
+			"Query": "CLIENTEINFO"
+		},
+		{
+			"Name": "HISTV",
+			"Query": "HISTV"
+		},
+		{
+			"Name": "IDENTIDADV",
+			"Query": "IDENTIDADV"
+		},
+		{
+			"Name": "OBJEVISIT",
+			"Query": "OBJEVISIT"
+		},
+		{
+			"Name": "PPTOVENDOR",
+			"Query": "PPTOVENDOR"
+		},
+		{
+			"Name": "VENDORCAMP",
+			"Query": "VENDORCAMP"
+		},
+		{
+			"Name": "VENDORINFO",
+			"Query": "VENDORINFO"
+		},
+		{
+			"Name": "WORKDAY",
+			"Query": "WORKDAY"
+		},
+		{
+			"Name": "CLIENTE_PROS",
+			"Query": "CLIENTE_PROS",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "ROLES",
+			"Query": "ROLES",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

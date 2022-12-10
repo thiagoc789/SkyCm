@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "La jornada laboral activa no corresponde a la fecha de hoy, debe realizar el check-out e iniciar una nueva jornada.",
+	"Title": "Atencion.",
+	"OKCaption": "OK"
+}

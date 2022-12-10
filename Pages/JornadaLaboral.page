@@ -1,0 +1,128 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "/SkyCM_V2/Rules/TraeFechaRule.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_FECHA_ACTUAL",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Fecha actual",
+							"PlaceHolder": "PlaceHolder"
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/ReadFecha.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_FECHAJORND",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Fecha de jornada",
+							"PlaceHolder": "PlaceHolder"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"_Type": "Section.Type.ContactCell",
+					"Target": {
+						"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+						"EntitySet": "WORKDAY",
+						"QueryOptions": "$top=1&$filter=ESTADO eq 'ACTIVO' and PERNR_SCP eq '{{#Application/#AppData/UserId}}'&$orderby=ESTADO desc,HORA_INICIO desc",
+						"ReadLink": ""
+					},
+					"_Name": "SectionContactCellTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No hay jornada laboral en curso",
+						"FooterVisible": false
+					},
+					"ContactCell": {
+						"ContextMenu": {
+							"PerformFirstActionWithFullSwipe": true,
+							"Items": [
+							]
+						},
+						"DetailImage": "/SkyCM_V2/Images/Bonbilla.png",
+						"Headline": "{FECHA}",
+						"Subheadline": "{ESTADO}",
+						"Description": "",
+						"OnPress": "/SkyCM_V2/Actions/Navigation/NavToDetalleJornadaActivaAction.action",
+						"ActivityItems": [
+						]
+					}
+				},
+				{
+					"Target": "",
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"Target": "",
+							"_Name": "SectionButton0",
+							"Title": "Iniciar mi Jornada",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"Visible": true,
+							"OnPress": "/SkyCM_V2/Actions/Navigation/NavToConfirmarJornada.action"
+						},
+						{
+							"Target": "",
+							"_Name": "SectionButton1",
+							"Title": "Historico  🗒",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"Visible": true,
+							"OnPress": {
+								"Handler": "/SkyCM_V2/Actions/Navigation/NavToHistoricoJornada.action",
+								"UserInteraction": {
+									"Enabled": true,
+									"Title": "Historico  🗒"
+								}
+							}
+						}
+					]
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando..."
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "VisitaAClientePage",
+	"Caption": "Jornada Laboral",
+	"PrefersLargeCaption": true,
+	"OnLoaded": "/SkyCM_V2/Rules/ValidarFechaJornada.js",
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem0",
+				"Caption": "ToolbarItem",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Icon": "sap-icon://refresh",
+				"OnPress": "/SkyCM_V2/Actions/Service/Download_jornada.action"
+			}
+		]
+	}
+}

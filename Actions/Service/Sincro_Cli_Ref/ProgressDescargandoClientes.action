@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.ProgressBanner",
+	"OnSuccess": "/SkyCM_V2/Actions/Service/Sincro_Cli_Ref/DownloadClientes.action",
+	"Message": "Sincronizando espere un momento...",
+	"Animated": true
+}

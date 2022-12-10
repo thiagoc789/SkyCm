@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"OnSuccess": "/SkyCM_V2/Actions/Message/Mensaje_espera_Checkin_Visita.action",
+	"PageToOpen": "/SkyCM_V2/Pages/Cli_Prosp/VisitaConfirmarProspecto.page",
+	"ModalPage": true,
+	"NavigationType": "Cross"
+}

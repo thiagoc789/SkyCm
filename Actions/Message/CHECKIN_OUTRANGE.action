@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.BannerMessage",
+	"OnSuccess": "/SkyCM_V2/Actions/OData/CrearVisitaconjuntificacion.action",
+	"Message": "Registrando Visita....",
+	"Duration": 5,
+	"Animated": true,
+	"DismissBannerOnAction": true
+}

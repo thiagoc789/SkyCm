@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"OnSuccess": "/SkyCM_V2/Actions/Fuljo2/Flujo2CheckoutVisita/CerrarVisitaActiva_UpdateEntity.action",
+	"PageToOpen": "/SkyCM_V2/Pages/Flujo2/TransictionVisitaCheckout.page",
+	"ModalPage": true,
+	"NavigationType": "Cross"
+}

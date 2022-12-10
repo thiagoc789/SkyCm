@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Tienes una visita activa hace una hora, ¿Deseas seguir en la misma visita?",
+	"Title": "ATENCION",
+	"OKCaption": "Si",
+	"OnOK": "/SkyCM_V2/Rules/V2-Consulta/MensajeVisita/SeguirVisita.js",
+	"CancelCaption": "No",
+	"OnCancel": "/SkyCM_V2/Actions/Navigation/Cli_Pros/NavToVisitaClienteProspecto.action"
+}

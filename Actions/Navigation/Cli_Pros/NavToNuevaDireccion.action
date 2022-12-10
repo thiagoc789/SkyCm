@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ShowActivityIndicator": false,
+	"ActivityIndicatorText": "",
+	"PageToOpen": "/SkyCM_V2/Pages/Cli_Prosp/NuevaDireccionClientePros.page",
+	"ModalPage": true,
+	"ModalPageFullscreen": false,
+	"NavigationType": "Inner"
+}

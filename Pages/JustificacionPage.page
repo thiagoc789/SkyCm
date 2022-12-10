@@ -1,0 +1,70 @@
+{
+	"Controls": [
+		{
+			"Target": "",
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "#Page:VisitaConfirmar/#Control:FC_PERNRVisitacv/#Value",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_PERNR_VISJUST",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Caption",
+							"PlaceHolder": "PlaceHolder"
+						},
+						{
+							"Target": "",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FC_Justificacion",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Seleccione un motivo",
+							"PickerPrompt": "Seleccione una opcion",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"PickerItems": [
+								"Se atiende en punto de venta del cliente.",
+								"Se atiende en satélite del cliente.",
+								"Se atiende en la casa del cliente",
+								"Se atiende en punto cercano a la ubicacion",
+								"Se atiende en las instalaciones de telas Patprimo",
+								"Se atiende de forma Virtual"
+							]
+						}
+					],
+					"Target": "",
+					"Visible": true
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando..."
+			}
+		}
+	],
+	"Target": "",
+	"_Type": "Page",
+	"_Name": "JustificacionPage",
+	"Caption": "Motivo",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Check-In",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/SkyCM_V2/Actions/Checks/CheckJustificacionNoCoordenadass.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	},
+	"PrefersLargeCaption": true
+}

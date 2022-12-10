@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "¿Esta seguro que desea cerrar sesion?",
+	"OKCaption": "Si",
+	"OnOK": "/SkyCM_V2/Actions/Logout.action",
+	"CancelCaption": "No"
+}

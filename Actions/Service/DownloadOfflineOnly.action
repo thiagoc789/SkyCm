@@ -1,0 +1,24 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"DefiningRequests": [
+		{
+			"Name": "CLIENTEINFO",
+			"Query": "CLIENTEINFO ",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "VENDORINFO",
+			"Query": "VENDORINFO",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "CLIENTE_PROS",
+			"Query": "CLIENTE_PROS",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"OnSuccess": "/SkyCM_V2/Actions/Service/UploadOffline.action",
+	"PageToOpen": "/SkyCM_V2/Pages/Main.page",
+	"ClearHistory": true,
+	"ModalPage": false,
+	"NavigationType": "Cross"
+}

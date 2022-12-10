@@ -1,0 +1,69 @@
+{
+	"Controls": [
+		{
+			
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ContactCell",
+					"Target": {
+						"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+						"EntitySet": "CLIENTEINFO",
+						"QueryOptions": "$filter=PERNR_SCP eq '{{#Application/#ClientData/#Property:UserId}}'"
+					},
+					"_Name": "SectionContactCellTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"DataPaging": {
+						"LoadingIndicatorText": "",
+						"ShowLoadingIndicator": true
+					},
+					"ContactCell": {
+						"ContextMenu": {
+							"PerformFirstActionWithFullSwipe": true,
+							"Items": []
+						},
+						"DetailImage": "/SkyCM_V2/Images/mis_clientes.png",
+						"Headline": "{NAME1}",
+						"Subheadline": "subHeadline",
+						"Description": "description",
+						"OnPress": "/SkyCM_V2/Actions/Navigation/NavToDetalleClientePage.action",
+						"ActivityItems": [
+							{
+								"ActivityType": "Email",
+								"ActivityValue": "{SMTP_ADDR}"
+							}
+						]
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Buscar"
+					}
+				}
+			]
+		}
+	],
+	"Target": "",
+	"_Type": "Page",
+	"_Name": "MisClientesPage",
+	"Caption": "Seleccione cliente",
+	"ActionBar": {
+		"Items": [
+			{
+				"Target": "",
+				"_Name": "ActionBarItem0",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/SkyCM_V2/Actions/CloseModalPage_Cancel.action",
+				"Caption": "Item"
+			}
+		],
+		"_Name": "ActionBar0"
+	},
+	"PrefersLargeCaption": true
+}

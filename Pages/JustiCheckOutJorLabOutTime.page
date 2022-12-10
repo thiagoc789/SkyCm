@@ -1,0 +1,105 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/SkyCM_V2/Actions/OData/CerrarJornadaActivaOutTime.action",
+				"Position": "Right",
+				"Caption": "Checkout",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Check-Out - OutTIme",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"IsEditable": false,
+							"IsVisible": false,
+							"Target": "",
+							"ValidationProperties": {
+								"SeparatorBackgroundColor": "#ffffff",
+								"SeparatorIsHidden": false
+							},
+							"Value": "Indique la hora de finalizacion :",
+							"_Name": "FormCellTitle0",
+							"_Type": "Control.Type.FormCell.Title"
+						},
+						{
+							"Caption": "Hora Final",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Mode": "Time",
+							"Target": "",
+							"Value": "18:00:00",
+							"_Name": "FC_HoraFinal",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "ID",
+							"IsEditable": false,
+							"IsVisible": false,
+							"PlaceHolder": "PlaceHolder",
+							"Target": "",
+							"Value": "{ID_JORNADA}",
+							"_Name": "FC_ID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Duración",
+							"IsEditable": true,
+							"IsVisible": false,
+							"PlaceHolder": "PlaceHolder",
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/CalculaDuracionJornada.js",
+							"_Name": "FormCellSimpleProperty0",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"IsEditable": false,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Target": "",
+							"ValidationProperties": {
+								"SeparatorBackgroundColor": "#ffffff",
+								"SeparatorIsHidden": false
+							},
+							"Value": "Indique el motivo :",
+							"_Name": "FormCellTitle1",
+							"_Type": "Control.Type.FormCell.Title"
+						},
+						{
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Ingrese Motivo ",
+							"Target": "",
+							"ValidationProperties": {
+								"SeparatorBackgroundColor": "#ffffff"
+							},
+							"_Name": "FC_Jus_Hora_Checkout",
+							"_Type": "Control.Type.FormCell.Note"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				}
+			],
+			"Target": "",
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"Target": "",
+	"_Name": "JustiCheckOutJorLabOutTime",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

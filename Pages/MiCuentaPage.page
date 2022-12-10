@@ -1,0 +1,100 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.Image",
+					"_Name": "SectionImage0",
+					"Visible": true,
+					"Image": "/SkyCM_V2/Images/user_icon.png",
+					"Height": 100,
+					"Alignment": "center",
+					"ContentMode": "Top"
+				},
+				{
+					"ObjectHeader": {
+						"Description": "{VORNA}",
+						"DetailImageIsCircular": false,
+						"Tags": [
+							{
+								"Text": "#Application/#ClientData/#Property:UserId"
+							}
+						],
+						"HeadlineText": "{NACHN}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading",
+						"Target": {
+							"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+							"EntitySet": "VENDORINFO",
+							"QueryOptions": "$filter=PERNR_SCP eq '{{#Application/#ClientData/#Property:UserId}}'"
+						}
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader1",
+					"Visible": true
+				},
+				{
+					"Target": "",
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"Target": "",
+							"_Name": "SectionButton0",
+							"Title": "Cambiar contraseña ",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"Visible": true,
+							"OnPress": "/SkyCM_V2/Actions/Service/ChangeUserPasscode.action"
+						},
+						{
+							"Target": "",
+							"Styles": {
+								"Button": "MyButton"
+							},
+							"_Name": "SectionButton1",
+							"Title": "Cerrar sesión",
+							"TextAlignment": "Center",
+							"Alignment": "Center",
+							"Visible": true,
+							"OnPress": "/SkyCM_V2/Rules/ValidarCambiosCerrarSesion.js"
+						}
+					]
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando..."
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "MiCuentaPage",
+	"Caption": "Cuenta",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"Target": "",
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "/SkyCM_V2/Images/support.png",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/SkyCM_V2/Actions/Navigation/v1.1.2/NavToSoporte.action"
+			}
+		],
+		"_Name": "ActionBar0"
+	}
+}

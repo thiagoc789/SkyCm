@@ -1,0 +1,67 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/SkyCM_V2/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"Caption": "",
+				"Visible": true
+			},
+			{
+				"OnPress": "/SkyCM_V2/Actions/OData/Editar_Objetivo.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"Caption": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Editar objetivo ",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "ID Objetivo",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "{ID_OBJE}",
+							"_Name": "FC_CodigoObjetivo",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Nombre",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "{NOM_OBJE}",
+							"_Name": "FC_NombreObjetivo",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Descripción",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "{DESC_OBJE}",
+							"_Name": "FC_DescObjetivo",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				}
+			],
+			"Target": "",
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"Target": "",
+	"_Name": "EditarObjetivoPage",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

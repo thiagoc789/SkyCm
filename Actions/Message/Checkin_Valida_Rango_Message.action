@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.BannerMessage",
+	"OnSuccess": "/SkyCM_V2/Actions/OData/CrearNuevaVisita.action",
+	"Message": "Calculando Por Favor Espere ....",
+	"Duration": 3,
+	"Animated": true
+}

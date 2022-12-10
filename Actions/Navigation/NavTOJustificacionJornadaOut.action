@@ -1,0 +1,5 @@
+{
+	"NavigationType": "Cross",
+	"PageToOpen": "/SkyCM_V2/Pages/JustiCheckOutJorLabOutTime.page",
+	"_Type": "Action.Type.Navigation"
+}

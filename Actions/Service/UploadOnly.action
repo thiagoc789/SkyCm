@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"OnFailure": "/SkyCM_V2/Rules/Rulereturntrue.js",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Subiendo datos al servidor....",
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+}

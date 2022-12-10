@@ -1,0 +1,67 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/SkyCM_V2/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"Caption": "Item",
+				"Visible": true
+			},
+			{
+				"OnPress": "/SkyCM_V2/Actions/OData/Crear_Objetivo.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"Caption": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Crear objetivo",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "ID Objetivo",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Ingrese un valor",
+							"Target": "",
+							"_Name": "FC_CodigoObjetivo",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Nombre",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Ingrese un valor",
+							"Target": "",
+							"_Name": "FC_NombreObjetivo",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Descripción",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Ingrese un valor",
+							"Target": "",
+							"_Name": "FC_DescObjetivo",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				}
+			],
+			"Target": "",
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"Target": "",
+	"_Name": "CrearObjetivoPage",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

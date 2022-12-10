@@ -1,0 +1,36 @@
+{
+	"Target": "",
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Target": "",
+					"Controls": [
+						{
+							"Target": "",
+							"Value": "      ⚒︎⚒︎⚒︎⚒︎⚒︎⚒︎ Procesando ⚒︎⚒︎⚒︎⚒︎⚒︎⚒︎⚒︎",
+							"_Type": "Control.Type.FormCell.Note",
+							"_Name": "FormCellNote0",
+							"IsEditable": false,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "TransictionVisitaCheckin",
+	"Caption": "TransictionVisitaCheckin",
+	"OnLoaded": "/SkyCM_V2/Actions/Fuljo2/CrearNuevaVisita.action",
+	"PrefersLargeCaption": true
+}

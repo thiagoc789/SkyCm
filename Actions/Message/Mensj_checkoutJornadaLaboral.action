@@ -1,0 +1,6 @@
+{
+	"Duration": 5,
+	"Message": "Finalizando jornada laboral...",
+	"OnSuccess": "/SkyCM_V2/Actions/OData/CerrarJornadaActiva.action",
+	"_Type": "Action.Type.BannerMessage"
+}

@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.BannerMessage",
+	"OnSuccess": "/SkyCM_V2/Actions/Message/Cli_Pros/MsjCheckin_Valida_Rango_Pros.action",
+	"ValidationRule": "/SkyCM_V2/Rules/Cli_Pros/ValidarDistanciaProspecto.js",
+	"Message": "Calculando Por Favor espere...",
+	"Duration": 5
+}

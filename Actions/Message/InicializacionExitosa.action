@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"Message": "Inicializacion exitosa!",
+	"Duration": 2,
+	"Animated": true
+}

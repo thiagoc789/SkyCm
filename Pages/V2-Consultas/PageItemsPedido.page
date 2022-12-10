@@ -1,0 +1,70 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"KeyAndValues": [
+						{
+							"Value": " $(N,{CantReservada}) ",
+							"_Name": "KeyValue0",
+							"KeyName": "Cantidad reservada:",
+							"Visible": true
+						},
+						{
+							"Value": "$(N,{CantPedida}) ",
+							"_Name": "KeyValue1",
+							"KeyName": "Cantidad pedida:",
+							"Visible": true
+						},
+						{
+							"Value": "$(N,{CantDespachada}) ",
+							"_Name": "KeyValue2",
+							"KeyName": "Cantidad despachada:",
+							"Visible": true
+						},
+						{
+							"Value": "$(N,{CantCancelada}) ",
+							"_Name": "KeyValue3",
+							"KeyName": "Cantidad cancelada:",
+							"Visible": true
+						},
+						{
+							"Value": "$(N,{CanPendiente}) ",
+							"_Name": "KeyValue4",
+							"KeyName": "Cantidad pendiente:",
+							"Visible": true
+						},
+						{
+							"Value": "$(N,{PrecioUnitario})",
+							"_Name": "KeyValue5",
+							"KeyName": "Precio unitario:",
+							"Visible": true
+						},
+						{
+							"Value": "$(N,{ValorTotal})",
+							"_Name": "KeyValue6",
+							"KeyName": "Valor total:",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PageItemsPedido",
+	"Caption": "{Referencia}",
+	"PrefersLargeCaption": true
+}

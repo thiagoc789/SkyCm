@@ -1,0 +1,265 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Subhead": "Gestione y administre sus visitas a clientes",
+						"Footnote": "2.0.2 DEV",
+						"DetailImage": "/SkyCM_V2/Images/Icono_SkyCM.png",
+						"DetailImageIsCircular": false,
+						"Tags": [
+							{
+								"Text": "#Application/#ClientData/#Property:UserId"
+							}
+						],
+						"BodyText": "Sistema para casos B2E",
+						"HeadlineText": "Commercial Management",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"Header": {
+						"Target": "",
+						"_Name": "SectionHeader0",
+						"UseTopPadding": true
+					},
+					"_Type": "Section.Type.ObjectCollection",
+					"_Name": "SectionObjectCollection0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"Target": "",
+								"_Name": "SectionJornLab",
+								"Title": "Jornada Laboral",
+								"Visible": true,
+								"Subhead": "Registre el inicio de su jornada laboral",
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/IrAJornadaLaboral.action",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/reloj.png"
+										}
+									],
+									"ImageIsCircular": true
+								}
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"_Type": "Section.Type.ObjectCollection",
+					"_Name": "SectionGestion",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"Target": "",
+								"_Name": "SectionObjectCell1asq",
+								"Title": "Gestión de visitas",
+								"Visible": true,
+								"Subhead": "Consulte información detallada de sus visitas a clientes",
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/NavToGestionVisitas.action",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/gestion_visitas.png"
+										}
+									],
+									"ImageIsCircular": true
+								}
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"_Type": "Section.Type.ObjectCollection",
+					"_Name": "SectionVisita",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"Target": "",
+								"_Name": "SectionObjectCell2qa",
+								"Title": "Visita a cliente",
+								"Visible": true,
+								"Subhead": "Cree una nueva visita a cliente",
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Rules/ValidarJornadaLaboralActiva.js",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/visitar_cliente.png"
+										}
+									],
+									"ImageIsCircular": false
+								}
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"_Type": "Section.Type.ObjectCollection",
+					"_Name": "SectionConsultas",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"_Name": "SectionConsultass",
+								"Title": "Consultas",
+								"Visible": true,
+								"Subhead": "Consulte, estado de pedido, inventario y estado de cartera",
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/V2-Consulta/NavToConsulta.action",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/HojaBuscar.png"
+										}
+									],
+									"ImageIsCircular": false
+								}
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"_Type": "Section.Type.ObjectCollection",
+					"_Name": "SectionUsuarios",
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"Target": "",
+								"_Name": "SectionObjecsd",
+								"Title": "Gestión de usuarios",
+								"Visible": false,
+								"Subhead": "Gestione los usuarios que utilizan la aplicacion",
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/NavToGestionUsuarios.action",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/Gestion_usuarios_main.png"
+										}
+									],
+									"ImageIsCircular": false
+								}
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"_Name": "SectionCuentasaqwe",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"Target": "",
+								"_Name": "SectionObjectCell4q",
+								"Title": "Cuenta",
+								"Visible": true,
+								"Subhead": "Configuración de la cuenta",
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/NavToCuentaPage.action",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/user_icon.png"
+										}
+									],
+									"ImageIsCircular": false
+								}
+							}
+						}
+					],
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				},
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "fc_idtiempo",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Caption",
+							"PlaceHolder": "PlaceHolder"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando..."
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Menú",
+	"PrefersLargeCaption": true,
+	"OnLoaded": "/SkyCM_V2/Rules/actualizar_interval.js",
+	"OnResume": "/SkyCM_V2/Rules/V2-Consulta/MensajeVisita/EjecutarMensaje.js",
+	"OnActivityBackPressed": "/SkyCM_V2/Rules/V2-Consulta/MensajeVisita/EjecutarMensaje.js"
+}

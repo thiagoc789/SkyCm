@@ -1,0 +1,15 @@
+{
+	"OnSuccess": "/SkyCM_V2/Actions/CloseModalPage_Complete.action",
+	"Properties": {
+		"ESTADO": "INACTIVO",
+		"HORA_FIN": "#Page:DetalleJornadaActiva/#Control:FC_HoraFin/#Value",
+		"ID_JORNADA": "#Page:DetalleJornadaActiva/#Control:FC_ID_Jornada/#Value",
+		"PERNR": "/SkyCM_V2/Rules/CalcularJornadaDuracion.js"
+	},
+	"Target": {
+		"EntitySet": "WORKDAY",
+		"ReadLink": "{@odata.readLink}",
+		"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+	},
+	"_Type": "Action.Type.ODataService.UpdateEntity"
+}

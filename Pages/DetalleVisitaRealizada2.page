@@ -1,0 +1,123 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Subhead": "{KUNNR}",
+						"Footnote": "Información de visita realizada a cliente",
+						"DetailImage": "/SkyCM_V2/Images/visitas_realizadas.png",
+						"DetailImageIsCircular": false,
+						"BodyText": "{FECHA}",
+						"HeadlineText": "{NAME1}"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader1",
+					"Visible": true
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/CuentaVisitasClienteMes.js",
+							"_Name": "KeyValue0",
+							"KeyName": "Número de visitas a este cliente en el mes actual: ",
+							"Visible": false
+						},
+						{
+							"Target": "",
+							"Value": "{{#Property:MES}}",
+							"_Name": "KeyValue1",
+							"KeyName": "Mes:",
+							"Visible": true
+						},
+						{
+							"Target": "",
+							"Value": "{{#Property:ANO}}",
+							"_Name": "KeyValue2",
+							"KeyName": "Año:",
+							"Visible": true
+						},
+						{
+							"Target": "",
+							"Value": "{{#Property:HORA}}",
+							"_Name": "KeyValue3",
+							"KeyName": "Hora inicio:",
+							"Visible": true
+						},
+						{
+							"Target": "",
+							"Value": "{{#Property:FIN}}",
+							"_Name": "KeyValue4",
+							"KeyName": "Hora fin:",
+							"Visible": true
+						},
+						{
+							"Target": "",
+							"Value": "{{#Property:DURACION}}",
+							"_Name": "KeyValue5",
+							"KeyName": "Duración:",
+							"Visible": true
+						},
+						{
+							"Target": "",
+							"Value": "{{#Property:ID_VISITA}}",
+							"_Name": "KeyValue6",
+							"KeyName": "ID Visita:",
+							"Visible": true
+						},
+						{
+							"Target": "",
+							"Value": "{{#Property:JUSTIF}}",
+							"_Name": "KeyValue7",
+							"KeyName": "Justificación:",
+							"Visible": true
+						},
+						{
+							"Target": "",
+							"Value": "{{#Property:OBSERVACION}}",
+							"_Name": "KeyValue8",
+							"KeyName": "Observación:",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando Informacion.."
+			}
+		}
+	],
+	"Target": "",
+	"_Type": "Page",
+	"_Name": "DetalleVisitaRealizada2",
+	"Caption": "Detalle Visita",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/SkyCM_V2/Actions/CloseModalPage_Cancel.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	},
+	"PrefersLargeCaption": true
+}

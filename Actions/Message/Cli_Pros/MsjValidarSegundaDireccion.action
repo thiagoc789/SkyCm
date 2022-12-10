@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Ningún campo puede estar vacío",
+	"Title": "¡Alerta!",
+	"OKCaption": "Ok"
+}

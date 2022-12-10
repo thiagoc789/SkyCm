@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"OnFailure": "/SkyCM_V2/Actions/Message/Cli_Pros/MsjValidarSegundaDireccion.action",
+	"OnSuccess": "/SkyCM_V2/Actions/Message/Cli_Pros/MsjConfirmacionNuevaDireccion.action",
+	"RequiredFields": [
+		"FC_DIR2"
+	]
+}

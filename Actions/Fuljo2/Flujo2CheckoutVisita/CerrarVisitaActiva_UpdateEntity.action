@@ -1,0 +1,16 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"OnSuccess": "/SkyCM_V2/Actions/Fuljo2/Flujo2CheckoutVisita/VisitaFinalizada.action",
+	"Target": {
+		"EntitySet": "HISTV",
+		"ReadLink": "{@odata.readLink}",
+		"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+	},
+	"Properties": {
+		"ID_VISITA": "#Page:-Previous/#Control:FC_IDVisita/#Value",
+		"FIN": "#Page:-Previous/#Control:FC_HoraFin/#Value",
+		"DURACION": "/SkyCM_V2/Rules/CalculaDuracionVisita1.js",
+		"OBSERVACION": "#Page:-Previous/#Control:FC_Observaciones/#Value",
+		"ESTADO": "INACTIVO"
+	}
+}

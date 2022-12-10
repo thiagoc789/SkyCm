@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"OnFailure": "/SkyCM_V2/Actions/Message/V2-Consulta/MsjValidarInventario.action",
+	"OnSuccess": "/SkyCM_V2/Rules/Paises/ValidarSociedad.js",
+	"RequiredFields": [
+		"FC_List_Referencia"
+	]
+}

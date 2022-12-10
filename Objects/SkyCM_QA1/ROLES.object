@@ -1,0 +1,19 @@
+{
+	"Service": "/SkyCM_QA1/Services/SkyCM_QA1.service",
+	"Collection": [
+		"ROLES"
+	],
+	"Properties": [
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "USUARIO"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "ROL"
+		}
+	],
+	"_Name": "ROLES"
+}

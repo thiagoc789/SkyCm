@@ -1,0 +1,6 @@
+{
+	"ClearHistory": false,
+	"ModalPage": false,
+	"PageToOpen": "/SkyCM_V2/Pages/RegistrarUsuarioPage.page",
+	"_Type": "Action.Type.Navigation"
+}

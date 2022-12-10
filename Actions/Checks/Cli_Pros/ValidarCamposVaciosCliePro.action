@@ -1,0 +1,12 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"OnFailure": "/SkyCM_V2/Actions/Message/Cli_Pros/MsjCamposVacios.action",
+	"OnSuccess": "/SkyCM_V2/Actions/Message/Cli_Pros/ProgressCliPros.action",
+	"RequiredFields": [
+		"FC_DIRECCIONCP",
+		"FC_EMAILCP",
+		"FC_NitCP",
+		"FC_TELEFONOCP",
+		"FC_LISTIPOCL"
+	]
+}

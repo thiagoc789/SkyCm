@@ -1,0 +1,285 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/SkyCM_V2/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"Caption": "Item",
+				"Visible": true
+			},
+			{
+				"IsIconCircular": false,
+				"OnPress": "/SkyCM_V2/Actions/Checks/CheckObjetivoVisita.action",
+				"Position": "Right",
+				"Caption": "Check-In",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Confirmar visita",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "ID visita",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/CrearIDVisita.js",
+							"_Name": "FC_IDVisita",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Destinatario de mercancia:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "{{#Property:KUNN2}}",
+							"_Name": "FC_KUNN2Visita",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": false,
+							"Caption": "Objetivo visita",
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": {
+								"ObjectCell": {
+									"DetailImageIsCircular": false,
+									"Icons": [],
+									"PreserveIconStackSpacing": true,
+									"Styles": {},
+									"Title": "{NOM_OBJE}"
+								},
+								"ReturnValue": "{ID_OBJE}",
+								"Target": {
+									"EntitySet": "OBJEVISIT",
+									"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+								}
+							},
+							"PickerPrompt": "Seleccione un objetivo",
+							"Search": {
+								"Enabled": true,
+								"Placeholder": "Buscar"
+							},
+							"Target": "",
+							"_Name": "FC_ObjetivoVisita",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"Caption": "Visita de campaña",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Target": "",
+							"Value": false,
+							"_Name": "FC_SwitchCampana",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"AllowEmptySelection": true,
+							"AllowMultipleSelection": false,
+							"Caption": "Seleccione Campaña",
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": false,
+							"PickerItems": {
+								"ObjectCell": {
+									"DetailImageIsCircular": false,
+									"Icons": [],
+									"PreserveIconStackSpacing": true,
+									"Styles": {},
+									"Title": "{NOM_CAMP}"
+								},
+								"ReturnValue": "{ID_CAMP}",
+								"Target": {
+									"EntitySet": "CAMPANA",
+									"QueryOptions": "$filter=EST_CAMP eq 'ACTIVO'",
+									"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+								}
+							},
+							"PickerPrompt": "Seleccione una campaña",
+							"Search": {
+								"Enabled": true,
+								"Placeholder": "Buscar"
+							},
+							"Target": "",
+							"_Name": "FC_Campana",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"Caption": "Dirección:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Target": "",
+							"Value": "{{#Property:STRAS}}",
+							"_Name": "FormCellSimpleProperty0",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Fecha:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/TraeFechaRule.js",
+							"_Name": "FC_FechaVisita",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Hora:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/TraeHoraRule.rule.js",
+							"_Name": "FC_HoraVisita",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Mes:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/TraeMesRule.rule.js",
+							"_Name": "FC_MesVisita",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Año",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/TraeAnoRule.rule.js",
+							"_Name": "FC_AñoVisita",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Nombre:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Target": "",
+							"Value": "{{#Property:NAME1}}",
+							"_Name": "FC_NAME1Visita",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Código cliente:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "{{#Property:KUNNR}}",
+							"_Name": "FC_KUNNRVisita",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Sociedad:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "{{#Property:BUKRS}}",
+							"_Name": "FC_BUKRSVisita",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Código vendedor:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "{{#Property:PERNR}}",
+							"_Name": "FC_PERNRVisita",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Código SCP:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "#Application/#ClientData/#Property:UserId",
+							"_Name": "FC_PERNRSCPVisita",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Latitud:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"_Name": "FC_Latitud",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Longitud:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"_Name": "FC_Longitud",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"Caption": "Bandera",
+							"IsEditable": false,
+							"IsVisible": false,
+							"PlaceHolder": "PlaceHolder",
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/ValidarCant_Visitas.rule.js",
+							"_Name": "FC_Bandera",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Latitud Vendor",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"_Name": "FC_Latitud_Vendor",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Longitud Vendor",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"_Name": "FC_Longitud_Vendor",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				}
+			],
+			"Target": "",
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"Target": "",
+	"_Name": "VisitaConfirmar",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

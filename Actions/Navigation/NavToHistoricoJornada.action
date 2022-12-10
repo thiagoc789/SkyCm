@@ -1,0 +1,5 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"PageToOpen": "/SkyCM_V2/Pages/HistoricoJornadaLaboral.page",
+	"NavigationType": "Cross"
+}

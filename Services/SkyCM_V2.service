@@ -1,0 +1,15 @@
+{
+	"ServiceUrl": "/destinations/mobileservices",
+	"DestinationName": "com.skycm.productivo",
+	"LanguageURLParam": "sap-language",
+	"OfflineEnabled": true,
+	"OfflineOptions": {
+		"StoreParameters": {
+			"EnableBackgroundDataTransfer": true,
+			"EnableRepeatableRequests": true,
+			"EnableRequestQueueOptimization": true
+		}
+	},
+	"SourceType": "Mobile",
+	"RestService": false
+}

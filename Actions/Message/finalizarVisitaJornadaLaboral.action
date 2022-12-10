@@ -1,0 +1,8 @@
+{
+	"CancelCaption": "Cancel",
+	"Message": "Debes finalizar la visita",
+	"OKCaption": "Finalizar visita...",
+	"OnOK": "/SkyCM_V2/Actions/Navigation/NavToVisitaACliente.action",
+	"Title": "⚠️  TIENES UNA VISITA ACTIVA!",
+	"_Type": "Action.Type.Message"
+}

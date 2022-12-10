@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.BannerMessage",
+	"Message": "♼ ♼ ♼ Registrando ...Espera Por Favor",
+	"Duration": 3,
+	"Animated": true,
+	"ActionLabel": "ok",
+	"DismissBannerOnAction": true
+}

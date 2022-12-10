@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "La referencia digitada no existe.",
+	"Title": "Atención",
+	"OKCaption": "OK"
+}

@@ -1,0 +1,72 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ContactCell",
+					"Target": {
+						"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+						"EntitySet": "CLIENTE_PROS",
+						"QueryOptions": "$filter=PERNR_SCP eq '{{#Application/#ClientData/#Property:UserId}}'"
+					},
+					"_Name": "SectionContactCellTable12",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"DataPaging": {
+						"LoadingIndicatorText": "",
+						"ShowLoadingIndicator": true
+					},
+					"ContactCell": {
+						"ContextMenu": {
+							"PerformFirstActionWithFullSwipe": true,
+							"Items": []
+						},
+						"DetailImage": "/SkyCM_V2/Images/mis_clientes.png",
+						"Headline": "{NACHN}",
+						"Subheadline": "",
+						"Description": "",
+						"OnPress": "/SkyCM_V2/Actions/Navigation/Cli_Pros/NavToDetalleClienteProspecto.action",
+						"ActivityItems": []
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Buscar"
+					}
+				},
+				{
+					"Target": "",
+					"Controls": [
+						{
+							"Target": "",
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "BtnCrearProsp",
+							"IsVisible": true,
+							"Title": "Crear Prospecto Cliente",
+							"Alignment": "Center",
+							"OnPress": "/SkyCM_V2/Actions/Navigation/Cli_Pros/NavToCrearClienteProspecto.action"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando clientes..."
+			}
+		}
+	],
+	"Target": "",
+	"_Type": "Page",
+	"_Name": "MisClientesProspectoPage",
+	"Caption": "Seleccione cliente prospecto",
+	"PrefersLargeCaption": true
+}

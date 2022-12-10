@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"OnSuccess": "/SkyCM_V2/Actions/Navigation/NavToMenuDownl.action",
+	"Message": "Jornada Laboral Iniciada",
+	"Duration": 4,
+	"Animated": true
+}

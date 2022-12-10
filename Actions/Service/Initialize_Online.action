@@ -1,0 +1,12 @@
+{
+	"_Type": "Action.Type.ODataService.Initialize",
+	"OnSuccess": "/SkyCM_V2/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"Service": "/SkyCM_V2/Services/Online_initialize.service",
+	"DefiningRequests": [
+		{
+			"Name": "INVENTARIO",
+			"Query": "INVENTARIO",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

@@ -1,0 +1,146 @@
+{
+	"Caption": "Detalle",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [
+							{
+								"Text": "{EST_CAMP}"
+							}
+						],
+						"BodyText": "Información de visitas de esta campaña",
+						"DetailImage": "/SkyCM_V2/Images/visitasxcampana.png",
+						"DetailImageIsCircular": false,
+						"HeadlineText": "{NOM_CAMP}",
+						"StatusText": "/SkyCM_V2/Rules/PercentPpto.js",
+						"Subhead": "{ID_CAMP}"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Fecha inicio:",
+							"Target": "",
+							"Value": "{{#Property:FECHA_INI}}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Fecha Fin:",
+							"Target": "",
+							"Value": "{{#Property:FECHA_FIN}}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Visible": true,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"SimplePropertyCells": [
+						{
+							"SimplePropertyCell": {
+								"AccessoryType": "none",
+								"KeyName": "Estado:",
+								"Target": "",
+								"Value": "/SkyCM_V2/Rules/EstadoCampana.js",
+								"Visible": true
+							}
+						}
+					],
+					"Visible": true,
+					"_Name": "SectionSimplePropertyCollection1",
+					"_Type": "Section.Type.SimplePropertyCollection"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"SimplePropertyCells": [
+						{
+							"SimplePropertyCell": {
+								"AccessoryType": "none",
+								"KeyName": "% de avance campaña:",
+								"Target": "",
+								"Value": "/SkyCM_V2/Rules/PercentPpto.js",
+								"Visible": true
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"AccessoryType": "none",
+								"KeyName": "Visitas de la campaña en el mes:",
+								"Target": "",
+								"Value": "/SkyCM_V2/Rules/CuentaVisitasCampana.js",
+								"Visible": true
+							}
+						}
+					],
+					"Visible": true,
+					"_Name": "SectionSimplePropertyCollection0",
+					"_Type": "Section.Type.SimplePropertyCollection"
+				},
+				{
+					"EmptySection": {
+						"Caption": "No hay visitas realizadas de esta campaña",
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "/SkyCM_V2/Images/visitasxcampana.png"
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Footnote": "Visita realizada de campaña",
+						"OnPress": "/SkyCM_V2/Actions/Navigation/DetalleVisitaRealizadaxCampanaPage.action",
+						"PreserveIconStackSpacing": true,
+						"Styles": {
+							"Title": "Visitas realizadas de esta campaña:"
+						},
+						"Subhead": "{FECHA}",
+						"Title": "{NAME1}"
+					},
+					"Target": {
+						"EntitySet": "HISTV",
+						"QueryOptions": "$filter=ID_CAMP eq '{{#Property:ID_CAMP}}' and PERNR_SCP eq '{{#Application/#ClientData/#Property:UserId}}'",
+						"ReadLink": "{@odata.readLink}",
+						"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Target": "",
+	"_Name": "DetalleVisitasxCampanaPage",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

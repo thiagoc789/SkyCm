@@ -1,0 +1,93 @@
+{
+	"Caption": "Nueva visita",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "ID Visita",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Target": "",
+							"_Name": "FC_IDVisita",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"AllowEmptySelection": true,
+							"AllowMultipleSelection": false,
+							"Caption": "Seleccione cliente",
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": true,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": {
+								"ObjectCell": {
+									"AccessoryType": "none",
+									"DetailImageIsCircular": "false",
+									"Icons": [],
+									"PreserveIconStackSpacing": true,
+									"Styles": {},
+									"Title": "{NAME1}"
+								},
+								"ReturnValue": "{KUNNR}",
+								"Target": {
+									"EntitySet": "CLIENTEINFO",
+									"QueryOptions": "$filter=PERNR_SCP eq '{{#Application/#ClientData/#Property:UserId}}'",
+									"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+								}
+							},
+							"PickerPrompt": "Please select one single item",
+							"Search": {
+								"Enabled": true,
+								"Placeholder": "Buscar"
+							},
+							"Target": "",
+							"_Name": "FC_KUNNR",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						},
+						{
+							"AllowEmptySelection": true,
+							"AllowMultipleSelection": false,
+							"Caption": "Destinatario",
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": {
+								"ObjectCell": {
+									"DetailImageIsCircular": false,
+									"Icons": [],
+									"PreserveIconStackSpacing": true,
+									"Styles": {},
+									"Title": "{KUNN2}"
+								},
+								"ReturnValue": "{KUNN2}",
+								"Target": {
+									"EntitySet": "CLIENTEINFO",
+									"QueryOptions": "$filter=KUNNR eq '{{#Control:FC_KUNNR/#SelectedValue}}'",
+									"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+								}
+							},
+							"PickerPrompt": "Please select one single item",
+							"Target": "",
+							"_Name": "FC_KUNN2",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				}
+			],
+			"Target": "",
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"Target": "",
+	"_Name": "NuevaVisitaPage",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

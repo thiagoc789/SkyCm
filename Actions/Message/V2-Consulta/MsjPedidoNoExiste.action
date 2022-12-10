@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "El pedido digitado no existe.",
+	"Title": "Atención",
+	"OKCaption": "OK"
+}

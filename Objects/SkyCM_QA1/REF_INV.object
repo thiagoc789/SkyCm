@@ -1,0 +1,34 @@
+{
+	"Service": "/SkyCM_QA1/Services/SkyCM_QA1.service",
+	"Collection": [
+		"REF_INV"
+	],
+	"Properties": [
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "MANDT"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "MATNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "PERNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "VKGRP"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "FECHA"
+		}
+	],
+	"_Name": "REF_INV"
+}

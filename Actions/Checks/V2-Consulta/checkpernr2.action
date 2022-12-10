@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"OnFailure": "/SkyCM_V2/Actions/Message/V2-Consulta/msjcargandopedido.action",
+	"OnSuccess": "/SkyCM_V2/Actions/Rest/V2-consulta/Rest_Pedidos2.action",
+	"RequiredFields": [
+		"Fc_Pernr2Pedidos"
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.ProgressBanner",
+	"OnSuccess": "/SkyCM_V2/Actions/OData/CerrarJornadaActiva.action",
+	"Message": "Finalizando jornada laboral...",
+	"CompletionMessage": "Jornada laboral finalizada con exito",
+	"CompletionTimeout": 3,
+	"Animated": true
+}

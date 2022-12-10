@@ -1,0 +1,4 @@
+{
+	"_Type": "Action.Type.ApplicationUpdate",
+	"OnSuccess": "/SkyCM_V2/Actions/Service/InitializeOffline.action"
+}

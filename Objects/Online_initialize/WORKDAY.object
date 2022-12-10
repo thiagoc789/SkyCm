@@ -1,0 +1,44 @@
+{
+	"Service": "/SkyCM_V2/Services/Online_initialize.service",
+	"Collection": [
+		"WORKDAY"
+	],
+	"Properties": [
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "ID_JORNADA"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PERNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PERNR_SCP"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "FECHA"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "HORA_INICIO"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "HORA_FIN"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "ESTADO"
+		}
+	],
+	"_Name": "WORKDAY"
+}

@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ProgressBanner",
+	"OnSuccess": "/SkyCM_V2/Actions/OData/CrearNuevaVisita.action",
+	"Message": "Registrando visita espere un momento...",
+	"CompletionMessage": "Visita registrada con éxito!",
+	"CompletionTimeout": 1
+}

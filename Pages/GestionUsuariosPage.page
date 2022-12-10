@@ -1,0 +1,122 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/SkyCM_V2/Actions/ClosePage.action",
+				"Position": "Right",
+				"Caption": ".",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Gestión de Usuarios",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [
+							{
+								"Text": "{PERNR_SCP}"
+							}
+						],
+						"BodyText": "{USRID}",
+						"DetailImage": "/SkyCM_V2/Images/usersicon.png",
+						"DetailImageIsCircular": false,
+						"HeadlineText": "{NACHN}",
+						"Subhead": "{VORNA}",
+						"Target": {
+							"EntitySet": "VENDORINFO",
+							"QueryOptions": "$filter=PERNR_SCP eq '{{#Application/#ClientData/#Property:UserId}}'",
+							"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+						}
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"Caption": "Gestión de usuarios",
+						"UseTopPadding": false
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"AccessoryType": "none",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/gestion_usuarios.png"
+										}
+									],
+									"ImageIsCircular": false
+								},
+								"OnPress": "/SkyCM_V2/Actions/Navigation/NavToAdmins.action",
+								"PreserveIconStackSpacing": false,
+								"Subhead": "Usuarios con permisos especiales",
+								"Target": "",
+								"Title": "Administradores",
+								"Visible": true
+							}
+						},
+						{
+							"ObjectCell": {
+								"AccessoryType": "none",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/users.png"
+										}
+									],
+									"ImageIsCircular": false
+								},
+								"OnPress": "/SkyCM_V2/Actions/Navigation/NavToUsuarios.action",
+								"PreserveIconStackSpacing": false,
+								"Subhead": "Usuarios estándar",
+								"Target": "",
+								"Title": "Usuarios ",
+								"Visible": true
+							}
+						},
+						{
+							"ObjectCell": {
+								"AccessoryType": "none",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/nuevo_user.png"
+										}
+									],
+									"ImageIsCircular": false
+								},
+								"OnPress": "/SkyCM_V2/Actions/Navigation/NavToRegistrarUsuario.action",
+								"PreserveIconStackSpacing": false,
+								"Subhead": "Registre un nuevo usuario",
+								"Target": "",
+								"Title": "Nuevo usuario",
+								"Visible": true
+							}
+						}
+					],
+					"Visible": true,
+					"_Name": "SectionObjectCollection0",
+					"_Type": "Section.Type.ObjectCollection"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Target": "",
+	"_Name": "GestionUsuariosPage",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

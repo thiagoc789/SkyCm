@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.BannerMessage",
+	"OnSuccess": "/SkyCM_V2/Actions/OData/CerrarVisitaActiva_UpdateEntity.action",
+	"Message": "Procesando Por Favor Espere ...",
+	"Duration": 2,
+	"Animated": true
+}

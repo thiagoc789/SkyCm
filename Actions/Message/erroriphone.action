@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Failed to initialize application data service - {{#ActionResults:ResultRest/#Property:error}}",
+	"Title": "error",
+	"OKCaption": "ok"
+}

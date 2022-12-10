@@ -1,0 +1,28 @@
+{
+	"_Type": "Action.Type.RestService.SendRequest",
+	"ActionResult": {
+		"_Name": "ResultRest"
+	},
+	"OnFailure": "/SkyCM_V2/Actions/Message/V2-Consulta/MsjCargando.action",
+	"OnSuccess": "/SkyCM_V2/Rules/V2-Consulta/Rule_Rest_Cartera.js",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Enviando correo...",
+	"Target": {
+		"Service": "/SkyCM_V2/Services/Rest_Inventario.service",
+		"Path": "/CarteraSkyVMovil",
+		"OutputPath": "/MT_CarteraSkyVMovilResp/T_CarteraSkyVMovilResp/0",
+		"RequestProperties": {
+			"Method": "PUT",
+			"Body": {
+				"T_CarteraSKyVMovil": [
+					{
+						"Cliente": "#Page:EstadoCartera/#Control:FC_List_ClientesCartera/#SelectedValue",
+						"Vendedor": "#Page:EstadoCartera/#Control:Fc_Pernr_Cartera/#Value",
+						"Userdefpr1": "#Page:EstadoCartera/#Control:FC_List_Vend_Cli_Cart/#SelectedValue",
+						"Userdefpr2": "#Page:EstadoCartera/#Control:FC_SOC/#Value"
+						}
+				]
+			}
+		}
+	}
+}

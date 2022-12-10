@@ -1,0 +1,84 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [
+							{
+								"Text": "{PERNR_SCP}"
+							}
+						],
+						"Subhead": "{ADDRES}",
+						"DetailImage": "/SkyCM_V2/Images/mis_clientes.png",
+						"DetailImageIsCircular": false,
+						"HeadlineText": "{NACHN}"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"Value": "/SkyCM_V2/Rules/Cli_Pros/TraePernrProsp.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_PernrCliPros",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Codigo Vendor:"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"_Type": "Section.Type.ContactCell",
+					"Target": {
+						"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+						"EntitySet": "CLIENTE_PROS",
+						"QueryOptions": "$filter=KUNNR eq '{{#Property:KUNNR}}'",
+						"ReadLink": "{@odata.readLink}"
+					},
+					"_Name": "SectionContactCellTable1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ContactCell": {
+						"ContextMenu": {
+							"PerformFirstActionWithFullSwipe": true,
+							"Items": []
+						},
+						"DetailImage": "/SkyCM_V2/Images/mis_clientes.png",
+						"Headline": "{ADDRES}",
+						"Subheadline": "{KUNNR}",
+						"Description": "/SkyCM_V2/Rules/TraeMesRule.rule.js",
+						"OnPress": "/SkyCM_V2/Actions/Navigation/Cli_Pros/NavToVisitaConfirmarProspecto.action",
+						"ActivityItems": [
+							{
+								"ActivityType": "Detail",
+								"ActivityValue": ""
+							}
+						]
+					}
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando informacion del cliente..."
+			}
+		}
+	],
+	"Target": "",
+	"_Type": "Page",
+	"_Name": "DetalleClienteProspecto",
+	"Caption": "Detalle cliente prospecto",
+	"PrefersLargeCaption": true
+}

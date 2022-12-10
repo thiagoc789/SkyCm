@@ -1,0 +1,173 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Subhead": "{KUNNR}",
+						"Footnote": "Información de visita realizada a cliente",
+						"DetailImage": "/SkyCM_V2/Images/visitas_realizadas.png",
+						"DetailImageIsCircular": false,
+						"BodyText": "{FECHA}",
+						"HeadlineText": "{NAME1}"
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"_Type": "Section.Type.SimplePropertyCollection",
+					"_Name": "SectionSimplePropertyCollection2",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"SimplePropertyCells": [
+						{
+							"SimplePropertyCell": {
+								"Target": "",
+								"Value": "/SkyCM_V2/Rules/ContarVisitasPorMesTotal.rule.js",
+								"_Name": "SectionSimplePropertyCell0",
+								"KeyName": "Visitas al cliente en el mes:",
+								"AccessoryType": "none",
+								"Visible": true
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"_Type": "Section.Type.SimplePropertyCollection",
+					"_Name": "SectionSimplePropertyCollection0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"SimplePropertyCells": [
+						{
+							"SimplePropertyCell": {
+								"Target": "",
+								"Value": "{{#Property:MES}}",
+								"_Name": "SectionSimplePropertyCell1",
+								"KeyName": "Mes:",
+								"AccessoryType": "none",
+								"Visible": true
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"Target": "",
+								"Value": "{{#Property:ANO}}",
+								"_Name": "SectionSimplePropertyCell2",
+								"KeyName": "Año:",
+								"AccessoryType": "none",
+								"Visible": true
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"Target": "",
+								"Value": "{{#Property:HORA}}",
+								"_Name": "SectionSimplePropertyCell3",
+								"KeyName": "Hora inicio:",
+								"AccessoryType": "none",
+								"Visible": true
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"Target": "",
+								"Value": "{{#Property:FIN}}",
+								"_Name": "SectionSimplePropertyCell4",
+								"KeyName": "Hora fin:",
+								"AccessoryType": "none",
+								"Visible": true
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"Target": "",
+								"Value": "{{#Property:DURACION}}",
+								"_Name": "SectionSimplePropertyCell5",
+								"KeyName": "Duración:",
+								"AccessoryType": "none",
+								"Visible": true
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"Target": "",
+								"Value": "{{#Property:ID_VISITA}}",
+								"_Name": "SectionSimplePropertyCell6",
+								"KeyName": "ID visita:",
+								"AccessoryType": "none",
+								"Visible": true
+							}
+						},
+						{
+							"SimplePropertyCell": {
+								"Target": "",
+								"Value": "{{#Property:JUSTIF}}",
+								"_Name": "SectionSimplePropertyCell7",
+								"KeyName": "Justificación:",
+								"AccessoryType": "none",
+								"Visible": true
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Target": "",
+							"Value": "{{#Property:OBSERVACION}}",
+							"_Name": "KeyValue0",
+							"KeyName": "Observaciones:",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando informacion..."
+			}
+		}
+	],
+	"Target": "",
+	"_Type": "Page",
+	"_Name": "DetalleVisitaRealizada",
+	"Caption": "Detalle visita",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/SkyCM_V2/Actions/CloseModalPage_Cancel.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	},
+	"PrefersLargeCaption": true
+}

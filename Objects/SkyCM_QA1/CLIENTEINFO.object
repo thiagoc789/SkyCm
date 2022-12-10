@@ -1,0 +1,99 @@
+{
+	"Service": "/SkyCM_QA1/Services/SkyCM_QA1.service",
+	"Collection": [
+		"CLIENTEINFO"
+	],
+	"Properties": [
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "KUNNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "ADRNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "BUKRS"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "VKORG"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "VTWEG"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "SPART"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "PARVW"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "PARZA"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "KUNN2"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "NAME1"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PERNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PERNR_SCP"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "SMTP_ADDR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "LAND1"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "STRAS"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "ORT01"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "STR_SUPPL3"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "LOCATION"
+		}
+	],
+	"_Name": "CLIENTEINFO"
+}

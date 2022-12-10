@@ -1,0 +1,8 @@
+{
+	"CancelCaption": "Cancel",
+	"Message": "La jornada que desea cerrar pertenece al día anterior, debe realizar un Checkout out-time!",
+	"OKCaption": "OK",
+	"OnOK": "/SkyCM_V2/Actions/Navigation/NavTOJustificacionJornadaOut.action",
+	"Title": "⚠️ CHECKOUT OUT-TIME!",
+	"_Type": "Action.Type.Message"
+}

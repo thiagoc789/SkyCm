@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0" xmlns:sap="http://www.sap.com/Protocols/SAPData" xmlns:ux="http://www.sap.com/Protocols/OData4SAP/UX" xmlns:gp="http://www.sap.com/Protocols/SAPData/GenericPlayer">
+    <edmx:DataServices m:DataServiceVersion="2.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+        <Schema Namespace="CatalogService" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="CAMPANA">
+                <Key>
+                    <PropertyRef Name="ID_CAMP"/>
+                </Key>
+                <Property Name="ID_CAMP" Type="Edm.String" Nullable="false" MaxLength="10"/>
+                <Property Name="NOM_CAMP" Type="Edm.String" MaxLength="100"/>
+                <Property Name="FECHA_INI" Type="Edm.String" MaxLength="50"/>
+                <Property Name="FECHA_FIN" Type="Edm.String" MaxLength="50"/>
+                <Property Name="EST_CAMP" Type="Edm.String" MaxLength="10"/>
+            </EntityType>
+            <EntityType Name="CLIENTEINFO">
+                <Key>
+                    <PropertyRef Name="KUNNR"/>
+                    <PropertyRef Name="VKORG"/>
+                    <PropertyRef Name="VTWEG"/>
+                    <PropertyRef Name="SPART"/>
+                    <PropertyRef Name="PARVW"/>
+                    <PropertyRef Name="PARZA"/>
+                </Key>
+                <Property Name="KUNNR" Type="Edm.String" Nullable="false" MaxLength="10"/>
+                <Property Name="ADRNR" Type="Edm.String" MaxLength="10"/>
+                <Property Name="BUKRS" Type="Edm.String" MaxLength="4"/>
+                <Property Name="VKORG" Type="Edm.String" Nullable="false" MaxLength="4"/>
+                <Property Name="VTWEG" Type="Edm.String" Nullable="false" MaxLength="2"/>
+                <Property Name="SPART" Type="Edm.String" Nullable="false" MaxLength="2"/>
+                <Property Name="PARVW" Type="Edm.String" Nullable="false" MaxLength="2"/>
+                <Property Name="PARZA" Type="Edm.String" Nullable="false" MaxLength="5"/>
+                <Property Name="KUNN2" Type="Edm.String" MaxLength="10"/>
+                <Property Name="NAME1" Type="Edm.String" MaxLength="35"/>
+                <Property Name="PERNR" Type="Edm.String" MaxLength="8"/>
+                <Property Name="PERNR_SCP" Type="Edm.String" MaxLength="50"/>
+                <Property Name="SMTP_ADDR" Type="Edm.String" MaxLength="241"/>
+                <Property Name="LAND1" Type="Edm.String" MaxLength="3"/>
+                <Property Name="STRAS" Type="Edm.String" MaxLength="35"/>
+                <Property Name="ORT01" Type="Edm.String" MaxLength="35"/>
+                <Property Name="STR_SUPPL3" Type="Edm.String" MaxLength="40"/>
+                <Property Name="LOCATION" Type="Edm.String" MaxLength="40"/>
+            </EntityType>
+            <EntityType Name="CLIENTE_PROS">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                    <PropertyRef Name="KUNNR"/>
+                </Key>
+                <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="KUNNR" Type="Edm.String" Nullable="false" MaxLength="100"/>
+                <Property Name="PERNR_SCP" Type="Edm.String" MaxLength="100"/>
+                <Property Name="NACHN" Type="Edm.String" MaxLength="100"/>
+                <Property Name="TEL" Type="Edm.String" MaxLength="30"/>
+                <Property Name="EMAIL" Type="Edm.String" MaxLength="100"/>
+                <Property Name="ADDRES" Type="Edm.String" MaxLength="50"/>
+                <Property Name="TIPO_CLI" Type="Edm.String" MaxLength="50"/>
+                <Property Name="LATITUD" Type="Edm.String" MaxLength="50"/>
+                <Property Name="LONGITUD" Type="Edm.String" MaxLength="50"/>
+                <Property Name="ESTADO" Type="Edm.String" MaxLength="10"/>
+            </EntityType>
+            <EntityType Name="HISTV">
+                <Key>
+                    <PropertyRef Name="ID_VISITA"/>
+                </Key>
+                <Property Name="ID_VISITA" Type="Edm.String" Nullable="false" MaxLength="50"/>
+                <Property Name="KUNNR" Type="Edm.String" Nullable="false" MaxLength="10"/>
+                <Property Name="KUNN2" Type="Edm.String" MaxLength="10"/>
+                <Property Name="BUKRS" Type="Edm.String" MaxLength="4"/>
+                <Property Name="NAME1" Type="Edm.String" MaxLength="35"/>
+                <Property Name="PERNR" Type="Edm.String" MaxLength="8"/>
+                <Property Name="PERNR_SCP" Type="Edm.String" MaxLength="50"/>
+                <Property Name="MES" Type="Edm.String" MaxLength="2"/>
+                <Property Name="ANO" Type="Edm.String" MaxLength="4"/>
+                <Property Name="HORA" Type="Edm.String" MaxLength="50"/>
+                <Property Name="FIN" Type="Edm.String" MaxLength="50"/>
+                <Property Name="DURACION" Type="Edm.String" MaxLength="50"/>
+                <Property Name="ID_OBJETIVO" Type="Edm.String" MaxLength="10"/>
+                <Property Name="OBJ_CUMPL" Type="Edm.String" MaxLength="10"/>
+                <Property Name="OBSERVACION" Type="Edm.String" MaxLength="500"/>
+                <Property Name="ID_CAMP" Type="Edm.String" MaxLength="10"/>
+                <Property Name="ESTADO" Type="Edm.String" MaxLength="10"/>
+                <Property Name="FECHA" Type="Edm.String" MaxLength="50"/>
+                <Property Name="JUSTIF" Type="Edm.String" MaxLength="50"/>
+                <Property Name="LON_VENDOR" Type="Edm.String" MaxLength="100"/>
+                <Property Name="LAT_VENDOR" Type="Edm.String" MaxLength="100"/>
+            </EntityType>
+            <EntityType Name="HISTV_ESPEJO">
+                <Key>
+                    <PropertyRef Name="ID_VISITA"/>
+                </Key>
+                <Property Name="ID_VISITA" Type="Edm.String" Nullable="false" MaxLength="50"/>
+                <Property Name="KUNNR" Type="Edm.String" Nullable="false" MaxLength="10"/>
+                <Property Name="KUNN2" Type="Edm.String" MaxLength="10"/>
+                <Property Name="BUKRS" Type="Edm.String" MaxLength="4"/>
+                <Property Name="NAME1" Type="Edm.String" MaxLength="35"/>
+                <Property Name="PERNR" Type="Edm.String" MaxLength="8"/>
+                <Property Name="PERNR_SCP" Type="Edm.String" MaxLength="50"/>
+                <Property Name="MES" Type="Edm.String" MaxLength="2"/>
+                <Property Name="ANO" Type="Edm.String" MaxLength="4"/>
+                <Property Name="HORA" Type="Edm.String" MaxLength="50"/>
+                <Property Name="FIN" Type="Edm.String" MaxLength="50"/>
+                <Property Name="DURACION" Type="Edm.String" MaxLength="50"/>
+                <Property Name="ID_OBJETIVO" Type="Edm.String" MaxLength="10"/>
+                <Property Name="OBJ_CUMPL" Type="Edm.String" MaxLength="10"/>
+                <Property Name="OBSERVACION" Type="Edm.String" MaxLength="500"/>
+                <Property Name="ID_CAMP" Type="Edm.String" MaxLength="10"/>
+                <Property Name="ESTADO" Type="Edm.String" MaxLength="10"/>
+                <Property Name="FECHA" Type="Edm.String" MaxLength="50"/>
+                <Property Name="JUSTIF" Type="Edm.String" MaxLength="50"/>
+                <Property Name="LON_VENDOR" Type="Edm.String" MaxLength="100"/>
+                <Property Name="LAT_VENDOR" Type="Edm.String" MaxLength="100"/>
+            </EntityType>
+            <EntityType Name="IDENTIDADV">
+                <Key>
+                    <PropertyRef Name="PERNR"/>
+                </Key>
+                <Property Name="PERNR" Type="Edm.String" Nullable="false" MaxLength="8"/>
+                <Property Name="PERNR_SCP" Type="Edm.String" MaxLength="50"/>
+            </EntityType>
+            <EntityType Name="IDENTIDADV_MX">
+                <Key>
+                    <PropertyRef Name="PERNR"/>
+                </Key>
+                <Property Name="PERNR" Type="Edm.String" Nullable="false" MaxLength="8"/>
+                <Property Name="PERNR_SCP" Type="Edm.String" MaxLength="50"/>
+            </EntityType>
+            <EntityType Name="INVENTARIO">
+                <Key>
+                    <PropertyRef Name="MATNR"/>
+                    <PropertyRef Name="PERNR"/>
+                </Key>
+                <Property Name="MATNR" Type="Edm.String" Nullable="false" MaxLength="18"/>
+                <Property Name="PERNR" Type="Edm.String" Nullable="false" MaxLength="8"/>
+                <Property Name="VKGRP" Type="Edm.String" MaxLength="3"/>
+                <Property Name="FECHA" Type="Edm.String" MaxLength="8"/>
+            </EntityType>
+            <EntityType Name="INVENTARIO_MX">
+                <Key>
+                    <PropertyRef Name="MATNR"/>
+                    <PropertyRef Name="PERNR"/>
+                </Key>
+                <Property Name="MATNR" Type="Edm.String" Nullable="false" MaxLength="18"/>
+                <Property Name="PERNR" Type="Edm.String" Nullable="false" MaxLength="8"/>
+                <Property Name="VKGRP" Type="Edm.String" MaxLength="3"/>
+                <Property Name="FECHA" Type="Edm.String" MaxLength="8"/>
+            </EntityType>
+            <EntityType Name="OBJEVISIT">
+                <Key>
+                    <PropertyRef Name="ID_OBJE"/>
+                </Key>
+                <Property Name="ID_OBJE" Type="Edm.String" Nullable="false" MaxLength="10"/>
+                <Property Name="NOM_OBJE" Type="Edm.String" MaxLength="150"/>
+                <Property Name="DESC_OBJE" Type="Edm.String" MaxLength="241"/>
+            </EntityType>
+            <EntityType Name="PPTOVENDOR">
+                <Key>
+                    <PropertyRef Name="MANDT"/>
+                    <PropertyRef Name="KUNNR"/>
+                </Key>
+                <Property Name="MANDT" Type="Edm.String" Nullable="false" MaxLength="3"/>
+                <Property Name="KUNNR" Type="Edm.String" Nullable="false" MaxLength="10"/>
+                <Property Name="BUKRS" Type="Edm.String" Nullable="false" MaxLength="4"/>
+                <Property Name="VKORG" Type="Edm.String" Nullable="false" MaxLength="4"/>
+                <Property Name="VTWEG" Type="Edm.String" Nullable="false" MaxLength="2"/>
+                <Property Name="SPART" Type="Edm.String" Nullable="false" MaxLength="2"/>
+                <Property Name="PARVW" Type="Edm.String" Nullable="false" MaxLength="2"/>
+                <Property Name="PARZA" Type="Edm.String" Nullable="false" MaxLength="5"/>
+                <Property Name="PERNR" Type="Edm.String" MaxLength="8"/>
+                <Property Name="PERNR_SCP" Type="Edm.String" MaxLength="50"/>
+                <Property Name="MES" Type="Edm.String" MaxLength="2"/>
+                <Property Name="ANO" Type="Edm.String" MaxLength="4"/>
+                <Property Name="PLAN_VISITA" Type="Edm.String" MaxLength="3"/>
+                <Property Name="REAL_VISITA" Type="Edm.String" MaxLength="3"/>
+                <Property Name="ID_CAMP" Type="Edm.String" MaxLength="10"/>
+            </EntityType>
+            <EntityType Name="ROLES">
+                <Key>
+                    <PropertyRef Name="ID_ROL"/>
+                </Key>
+                <Property Name="ID_ROL" Type="Edm.String" Nullable="false" MaxLength="50"/>
+                <Property Name="NOM_ROL" Type="Edm.String" MaxLength="100"/>
+                <Property Name="DESC_ROL" Type="Edm.String" MaxLength="200"/>
+            </EntityType>
+            <EntityType Name="ROLESXUSER">
+                <Key>
+                    <PropertyRef Name="ID_ROLXUSER"/>
+                </Key>
+                <Property Name="ID_ROLXUSER" Type="Edm.String" Nullable="false" MaxLength="50"/>
+                <Property Name="PERNR_SCP" Type="Edm.String" MaxLength="50"/>
+                <Property Name="USER_ROL" Type="Edm.String" MaxLength="50"/>
+            </EntityType>
+            <EntityType Name="VENDORCAMP">
+                <Key>
+                    <PropertyRef Name="ID_VENDORCAMP"/>
+                </Key>
+                <Property Name="ID_VENDORCAMP" Type="Edm.String" Nullable="false" MaxLength="50"/>
+                <Property Name="PERNR" Type="Edm.String" MaxLength="8"/>
+                <Property Name="PERNR_SCP" Type="Edm.String" MaxLength="50"/>
+                <Property Name="ID_CAMP" Type="Edm.String" MaxLength="10"/>
+                <Property Name="NOM_CAMP" Type="Edm.String" MaxLength="100"/>
+            </EntityType>
+            <EntityType Name="VENDORINFO">
+                <Key>
+                    <PropertyRef Name="PERNR"/>
+                    <PropertyRef Name="PERNR_SCP"/>
+                </Key>
+                <Property Name="PERNR" Type="Edm.String" Nullable="false" MaxLength="8"/>
+                <Property Name="PERNR_SCP" Type="Edm.String" Nullable="false" MaxLength="50"/>
+                <Property Name="NACHN" Type="Edm.String" MaxLength="40"/>
+                <Property Name="VORNA" Type="Edm.String" MaxLength="40"/>
+                <Property Name="NATIO" Type="Edm.String" MaxLength="3"/>
+                <Property Name="USRTY" Type="Edm.String" MaxLength="4"/>
+                <Property Name="USRID" Type="Edm.String" MaxLength="30"/>
+                <Property Name="VKORG" Type="Edm.String" MaxLength="4"/>
+                <Property Name="VKGRP" Type="Edm.String" MaxLength="3"/>
+            </EntityType>
+            <EntityType Name="WORKDAY">
+                <Key>
+                    <PropertyRef Name="ID_JORNADA"/>
+                </Key>
+                <Property Name="ID_JORNADA" Type="Edm.String" Nullable="false" MaxLength="50"/>
+                <Property Name="PERNR" Type="Edm.String" MaxLength="8"/>
+                <Property Name="PERNR_SCP" Type="Edm.String" MaxLength="50"/>
+                <Property Name="FECHA" Type="Edm.String" MaxLength="50"/>
+                <Property Name="HORA_INICIO" Type="Edm.String" MaxLength="50"/>
+                <Property Name="HORA_FIN" Type="Edm.String" MaxLength="50"/>
+                <Property Name="ESTADO" Type="Edm.String" MaxLength="10"/>
+            </EntityType>
+            <EntityType Name="WORKDAY_ESPEJO">
+                <Key>
+                    <PropertyRef Name="ID_JORNADA"/>
+                </Key>
+                <Property Name="ID_JORNADA" Type="Edm.String" Nullable="false" MaxLength="50"/>
+                <Property Name="PERNR" Type="Edm.String" MaxLength="8"/>
+                <Property Name="PERNR_SCP" Type="Edm.String" MaxLength="50"/>
+                <Property Name="FECHA" Type="Edm.String" MaxLength="50"/>
+                <Property Name="HORA_INICIO" Type="Edm.String" MaxLength="50"/>
+                <Property Name="HORA_FIN" Type="Edm.String" MaxLength="50"/>
+                <Property Name="ESTADO" Type="Edm.String" MaxLength="10"/>
+            </EntityType>
+            <EntityContainer Name="EntityContainer" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="CAMPANA" EntityType="CatalogService.CAMPANA"/>
+                <EntitySet Name="CLIENTEINFO" EntityType="CatalogService.CLIENTEINFO"/>
+                <EntitySet Name="CLIENTE_PROS" EntityType="CatalogService.CLIENTE_PROS"/>
+                <EntitySet Name="HISTV" EntityType="CatalogService.HISTV"/>
+                <EntitySet Name="HISTV_ESPEJO" EntityType="CatalogService.HISTV_ESPEJO"/>
+                <EntitySet Name="IDENTIDADV" EntityType="CatalogService.IDENTIDADV"/>
+                <EntitySet Name="IDENTIDADV_MX" EntityType="CatalogService.IDENTIDADV_MX"/>
+                <EntitySet Name="INVENTARIO" EntityType="CatalogService.INVENTARIO"/>
+                <EntitySet Name="INVENTARIO_MX" EntityType="CatalogService.INVENTARIO_MX"/>
+                <EntitySet Name="OBJEVISIT" EntityType="CatalogService.OBJEVISIT"/>
+                <EntitySet Name="PPTOVENDOR" EntityType="CatalogService.PPTOVENDOR"/>
+                <EntitySet Name="ROLES" EntityType="CatalogService.ROLES"/>
+                <EntitySet Name="ROLESXUSER" EntityType="CatalogService.ROLESXUSER"/>
+                <EntitySet Name="VENDORCAMP" EntityType="CatalogService.VENDORCAMP"/>
+                <EntitySet Name="VENDORINFO" EntityType="CatalogService.VENDORINFO"/>
+                <EntitySet Name="WORKDAY" EntityType="CatalogService.WORKDAY"/>
+                <EntitySet Name="WORKDAY_ESPEJO" EntityType="CatalogService.WORKDAY_ESPEJO"/>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

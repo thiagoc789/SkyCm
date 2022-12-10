@@ -1,0 +1,18 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"OnSuccess": "/SkyCM_V2/Actions/Navigation/NavToMenuJL.action",
+	"ActivityIndicatorText": "",
+	"Target": {
+		"EntitySet": "WORKDAY",
+		"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+	},
+	"Properties": {
+		"ID_JORNADA": "#Page:-Previous/#Control:FC_IDJornadaLaboral/#Value",
+		"PERNR": "#Page:-Previous/#Control:FC_PERNRVisita/#Value",
+		"PERNR_SCP": "#Page:-Previous/#Control:FC_PERNRSCPVisita/#Value",
+		"FECHA": "#Page:-Previous/#Control:FC_FechaVisita/#Value",
+		"HORA_INICIO": "#Page:-Previous/#Control:FC_HoraInicio/#Value",
+		"HORA_FIN": "ND",
+		"ESTADO": "ACTIVO"
+	}
+}

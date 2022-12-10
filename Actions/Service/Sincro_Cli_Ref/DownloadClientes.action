@@ -1,0 +1,27 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnSuccess": "/SkyCM_V2/Actions/Message/BannerDescargaExitosa.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Este proceso puede ser demorado, Refrescando clientes espere un momento...",
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"DefiningRequests": [
+		{
+			"Name": "CLIENTEINFO",
+			"Query": "CLIENTEINFO",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "CLIENTE_PROS",
+			"Query": "CLIENTE_PROS?$filter=PERNR_SCP eq '{{#Application/#AppData/UserId}}'",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "VENDORINFO",
+			"Query": "VENDORINFO",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

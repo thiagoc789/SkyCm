@@ -1,0 +1,19 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"OnSuccess": "/SkyCM_V2/Actions/Navigation/NavToMenuFJL.action",
+	"ValidationRule": "/SkyCM_V2/Rules/ValidaVisitaActXcheckoutJornadLaboral.js",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Cerrando jornada laboral...",
+	"Target": {
+		"EntitySet": "WORKDAY",
+		"QueryOptions": "",
+		"ReadLink": "{@odata.readLink}",
+		"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+	},
+	"Properties": {
+		"ID_JORNADA": "#Page:DetalleJornadaActiva/#Control:FC_ID_Jornada/#Value",
+		"PERNR": "8.00",
+		"HORA_FIN": "18:00:00",
+		"ESTADO": "INACTIVO"
+	}
+}

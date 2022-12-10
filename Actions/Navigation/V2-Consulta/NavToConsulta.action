@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"OnSuccess": "/SkyCM_V2/Rules/V2-Consulta/Rule_TraerPernr.js",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Cargando...",
+	"PageToOpen": "/SkyCM_V2/Pages/V2-Consultas/Consultas.page",
+	"NavigationType": "Cross"
+}

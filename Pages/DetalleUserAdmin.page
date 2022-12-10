@@ -1,0 +1,65 @@
+{
+	"Caption": "Detalle de usuario",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [
+							{
+								"Text": "{PERNR_SCP}"
+							}
+						],
+						"BodyText": "{USRID}",
+						"DetailImage": "/SkyCM_V2/Images/gestion_usuarios.png",
+						"DetailImageIsCircular": false,
+						"Footnote": "Usuario administrador",
+						"HeadlineText": "{NACHN}",
+						"Subhead": "{VORNA}"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"Buttons": [
+						{
+							"OnPress": "/SkyCM_V2/Actions/OData/QuitaPermisosAdmin.action",
+							"Target": "",
+							"Alignment": "Center",
+							"Title": "Quitar permisos de administrador",
+							"Visible": true
+						},
+						{
+							"OnPress": "/SkyCM_V2/Rules/EliminarUserAdmin.js",
+							"Styles": {
+								"Button": "MyButton"
+							},
+							"Target": "",
+							"Alignment": "Center",
+							"Title": "Eliminar",
+							"Visible": true
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"Caption": "Opciones",
+						"UseTopPadding": false
+					},
+					"Target": "",
+					"Visible": true,
+					"_Name": "SectionButtonTable0",
+					"_Type": "Section.Type.ButtonTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Target": "",
+	"_Name": "DetalleUserAdmin",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

@@ -1,0 +1,54 @@
+{
+	"Service": "/SkyCM_V2/Services/Online_initialize.service",
+	"Collection": [
+		"VENDORINFO"
+	],
+	"Properties": [
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "PERNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "PERNR_SCP"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "NACHN"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "VORNA"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "NATIO"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "USRTY"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "USRID"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "VKORG"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "VKGRP"
+		}
+	],
+	"_Name": "VENDORINFO"
+}

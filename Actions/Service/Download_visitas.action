@@ -1,0 +1,13 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ShowActivityIndicator": false,
+	"ActivityIndicatorText": "Refrescando sus visitas.......",
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"DefiningRequests": [
+		{
+			"Name": "HISTV",
+			"Query": "HISTV",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

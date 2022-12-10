@@ -1,0 +1,14 @@
+{
+	"OnFailure": "/SkyCM_V2/Actions/Message/CrearObjetivoEntityFailure.action",
+	"OnSuccess": "/SkyCM_V2/Actions/CloseModalPage_Complete.action",
+	"Properties": {
+		"DESC_OBJE": "#Control:FC_DescObjetivo/#Value",
+		"ID_OBJE": "#Control:FC_CodigoObjetivo/#Value",
+		"NOM_OBJE": "#Control:FC_NombreObjetivo/#Value"
+	},
+	"Target": {
+		"EntitySet": "OBJEVISIT",
+		"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

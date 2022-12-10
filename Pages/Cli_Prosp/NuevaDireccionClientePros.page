@@ -1,0 +1,55 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_DIR2",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Dirección Nueva:",
+							"PlaceHolder": "Digite nueva dirección"
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/Latitud.rule.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_Latitud2_Pro",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Latitud:"
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/Longitud.rule.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_Longitud2_PRO",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Longitud:"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Title": "Guardar",
+							"Alignment": "Center",
+							"OnPress": "/SkyCM_V2/Actions/Checks/Cli_Pros/CheckDireccion2.action"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando informacion..."
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "NuevaDireccionClientePros",
+	"Caption": "Crear Nueva Dirección Cliente",
+	"PrefersLargeCaption": true
+}

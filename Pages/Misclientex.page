@@ -1,0 +1,47 @@
+{
+	"Caption": "Misclientex",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ContactCell": {
+						"ActivityItems": [
+							{
+								"ActivityType": "VideoCall",
+								"ActivityValue": "000-000-0000"
+							},
+							{
+								"ActivityType": "Email",
+								"ActivityValue": "sample@sap.com"
+							},
+							{
+								"ActivityType": "Detail",
+								"ActivityValue": "This is an alert"
+							}
+						],
+						"Description": "Description",
+						"DetailImage": "res://contact.png",
+						"Headline": "Headline",
+						"Subheadline": "Subheadline"
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Target": {
+						"EntitySet": "CLIENTEINFO",
+						"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+					},
+					"Visible": true,
+					"_Name": "SectionContactCellTable2",
+					"_Type": "Section.Type.ContactCell"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Target": "",
+	"_Name": "Misclientex",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

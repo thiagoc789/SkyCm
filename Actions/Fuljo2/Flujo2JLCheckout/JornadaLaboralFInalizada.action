@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"OnSuccess": "/SkyCM_V2/Actions/Fuljo2/Flujo2JLCheckout/NavToMenuFJL.action",
+	"Message": "Jornada Laboral Finalizada",
+	"Duration": 4,
+	"Animated": true
+}

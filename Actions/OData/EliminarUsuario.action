@@ -1,0 +1,8 @@
+{
+	"Target": {
+		"EntitySet": "VENDORINFO",
+		"ReadLink": "{@odata.readLink}",
+		"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+	},
+	"_Type": "Action.Type.ODataService.DeleteEntity"
+}

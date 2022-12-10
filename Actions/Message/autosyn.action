@@ -1,0 +1,6 @@
+{
+	"Message": "auto actualizacion en proceso",
+	"OnSuccess": "/SkyCM_V2/Actions/Service/SyncStartedMessage.action",
+	"Title": "autosyn...",
+	"_Type": "Action.Type.Message"
+}

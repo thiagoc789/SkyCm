@@ -1,0 +1,22 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"OnSuccess": "/SkyCM_V2/Actions/Message/Cli_Pros/MsjDeseaVisitarClienteProsp.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Creando cliente prospecto...",
+	"Target": {
+		"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+		"EntitySet": "CLIENTE_PROS"
+	},
+	"Properties": {
+		"KUNNR": "#Page:CrearClienteProspecto/#Control:FC_NitCP/#Value",
+		"PERNR_SCP": "#Application/#AppData/UserId",
+		"NACHN": "#Page:CrearClienteProspecto/#Control:FC_NOMBRECP/#Value",
+		"TEL": "#Page:CrearClienteProspecto/#Control:FC_TELEFONOCP/#Value",
+		"EMAIL": "#Page:CrearClienteProspecto/#Control:FC_EMAILCP/#Value",
+		"ADDRES": "#Page:CrearClienteProspecto/#Control:FC_DIRECCIONCP/#Value",
+		"TIPO_CLI": "#Page:CrearClienteProspecto/#Control:FC_LISTIPOCL/#SelectedValue",
+		"LATITUD": "#Page:CrearClienteProspecto/#Control:FC_LatitudProspecto/#Value",
+		"LONGITUD": "#Page:CrearClienteProspecto/#Control:FC_LongitudProspecto/#Value",
+		"ESTADO": "PROSPECTO"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ProgressBanner",
+	"OnSuccess": "/SkyCM_V2/Actions/UPDATEMANUALLY.action",
+	"Message": "Buscando actualización...",
+	"CompletionMessage": "Actualización exitosa.",
+	"CompletionTimeout": 4
+}

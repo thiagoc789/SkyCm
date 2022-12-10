@@ -1,0 +1,55 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ContactCell",
+					"Target": {
+						"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+						"EntitySet": "CLIENTEINFO",
+						"QueryOptions": ""
+					},
+					"_Name": "SectionContactCellTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "",
+						"PageSize": 50
+					},
+					"ContactCell": {
+						"ContextMenu": {
+							"PerformFirstActionWithFullSwipe": true,
+							"Items": [
+							]
+						},
+						"DetailImage": "/SkyCM_V2/Images/mis_clientes.png",
+						"Headline": "{NAME1}",
+						"Subheadline": "",
+						"Description": "",
+						"OnPress": "/SkyCM_V2/Actions/Navigation/NavToDetalleClientePage.action",
+						"ActivityItems": [
+						]
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Buscar",
+						"Delay": 700
+					}
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando clientes..."
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "MisClientesPage",
+	"Caption": "Seleccione cliente",
+	"PrefersLargeCaption": true
+}

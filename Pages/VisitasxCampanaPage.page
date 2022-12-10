@@ -1,0 +1,44 @@
+{
+	"Caption": "Campañas",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ContactCell": {
+						"ActivityItems": [
+							{
+								"ActivityType": "Detail",
+								"ActivityValue": ""
+							}
+						],
+						"DetailImage": "/SkyCM_V2/Images/visitasxcampana.png",
+						"Headline": "{NOM_CAMP}",
+						"OnPress": "/SkyCM_V2/Actions/Navigation/NavToDetalleVisitasxCampanaPage.action",
+						"Subheadline": "{EST_CAMP}"
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Buscar"
+					},
+					"Target": {
+						"EntitySet": "CAMPANA",
+						"QueryOptions": "$filter=EST_CAMP eq 'ACTIVO'",
+						"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+					},
+					"Visible": true,
+					"_Name": "SectionContactCellTable0",
+					"_Type": "Section.Type.ContactCell"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Target": "",
+	"_Name": "VisitasxCampanaPage",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

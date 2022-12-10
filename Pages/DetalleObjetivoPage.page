@@ -1,0 +1,56 @@
+{
+	"Caption": "Detalle objetivo",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [
+							{
+								"Text": "{ID_OBJE}"
+							}
+						],
+						"DetailImage": "/SkyCM_V2/Images/objetivo_visita.png",
+						"DetailImageIsCircular": false,
+						"HeadlineText": "{NOM_OBJE}",
+						"Subhead": "{DESC_OBJE}"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"Buttons": [
+						{
+							"OnPress": "/SkyCM_V2/Actions/Navigation/NavToEditarObjetivoPage.action",
+							"Target": "",
+							"Alignment": "Center",
+							"Title": "Editar objetivo",
+							"Visible": true
+						},
+						{
+							"OnPress": "/SkyCM_V2/Rules/Objetivo_DeleteConfirmation.js",
+							"Target": "",
+							"Alignment": "Center",
+							"Title": "Eliminar objetivo",
+							"Visible": true
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Target": "",
+					"Visible": true,
+					"_Name": "SectionButtonTable0",
+					"_Type": "Section.Type.ButtonTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Target": "",
+	"_Name": "DetalleObjetivoPage",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

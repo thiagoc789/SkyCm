@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"OnFailure": "/SkyCM_V2/Actions/Message/V2-Consulta/MsjCheckCartera.action",
+	"OnSuccess": "/SkyCM_V2/Actions/Checks/V2-Consulta/Checkpernr2Cartera.action",
+	"RequiredFields": [
+		"FC_List_ClientesCartera"
+	]
+}

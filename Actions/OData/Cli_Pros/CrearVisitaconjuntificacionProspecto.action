@@ -1,0 +1,32 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"OnSuccess": "/SkyCM_V2/Actions/Navigation/NavToMenuFVJustificacion.action",
+	"OnFailureLog": {
+		"Level": "Off",
+		"Message": ""
+	},
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Registrando visita espere un momento...",
+	"Target": {
+		"EntitySet": "HISTV",
+		"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+	},
+	"Properties": {
+		"ID_VISITA": "#Page:VisitaConfirmarProspecto/#Control:FC_IDVisita_Pro/#Value",
+		"KUNNR": "#Page:VisitaConfirmarProspecto/#Control:FC_KUNNRVisita_Pro/#Value",
+		"BUKRS": "PROS",
+		"NAME1": "#Page:VisitaConfirmarProspecto/#Control:FC_NAME1Visita_Pro/#Value",
+		"PERNR": "#Page:JustificacionPage/#Control:FC_PERNR_JUST_PRO/#Value",
+		"PERNR_SCP": "#Page:VisitaConfirmarProspecto/#Control:FC_PERNRSCPVisita_Pro/#Value",
+		"MES": "#Page:JustificacionPage/#Control:FC_MES_VISJUS_PROS/#Value",
+		"ANO": "#Page:VisitaConfirmarProspecto/#Control:FC_AñoVisita_Pro/#Value",
+		"HORA": "#Page:VisitaConfirmarProspecto/#Control:FC_HoraVisita_Pro/#Value",
+		"ID_OBJETIVO": "#Page:VisitaConfirmarProspecto/#Control:FC_ObjetivoVisita_Pro/#SelectedValue",
+		"ID_CAMP": "#Page:VisitaConfirmarProspecto/#Control:FC_Bandera_Pro/#Value",
+		"ESTADO": "ACTIVO",
+		"FECHA": "#Page:VisitaConfirmarProspecto/#Control:FC_FechaVisita_Pro/#Value",
+		"JUSTIF": "#Page:JustificacionPage/#Control:FC_Justificacion/#SelectedValue",
+		"LON_VENDOR": "#Page:VisitaConfirmarProspecto/#Control:FC_Longitud_Vendor_Pro/#Value",
+		"LAT_VENDOR": "#Page:VisitaConfirmarProspecto/#Control:FC_Latitud_Vendor_Pro/#Value"
+	}
+}

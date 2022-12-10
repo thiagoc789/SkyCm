@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.OpenBarcodeScanner",
+	"ActionResult": {
+		"_Name": "OpenBarcodeScanner"
+	},
+	"OnSuccess": "/SkyCM_V2/Rules/Acceso/BarcodeScanResult.js"
+}

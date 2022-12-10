@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Desea realizar Check Out ?",
+	"Title": "CheckOut Laboral",
+	"OKCaption": "Si",
+	"OnOK": "/SkyCM_V2/Actions/Fuljo2/Flujo2JLCheckout/NavToTransJLCheckout.action",
+	"CancelCaption": "No"
+}

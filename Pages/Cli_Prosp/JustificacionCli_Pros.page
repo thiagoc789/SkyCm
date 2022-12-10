@@ -1,0 +1,88 @@
+{
+	"Controls": [
+		{
+			"Target": "",
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "/SkyCM_V2/Rules/Cli_Pros/TraePernrProsp.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_PERNR_JUST_PRO",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Caption",
+							"PlaceHolder": "PlaceHolder"
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/TraeMesRule.rule.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_MES_VISJUS_PROS",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Caption",
+							"PlaceHolder": "PlaceHolder"
+						},
+						{
+							"Target": "",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FC_Justificacion",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Seleccione un motivo",
+							"PickerPrompt": "Seleccione una opcion",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"PickerItems": [
+								"Se atiende en un punto de venta del cliente.",
+								"Se atiende por llamada telefonica",
+								"Se atiende en satelite del cliente",
+								"Se atiende en un punto cercano a la ubicacion",
+								"Se atiende en las instalaciones de telas Patprimo",
+								"Se atiende de forma virtual"
+							]
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Title": "Crear Nueva Dirección Cliente Prospecto",
+							"Alignment": "Center",
+							"OnPress": "/SkyCM_V2/Actions/Navigation/Cli_Pros/NavToNuevaDireccion.action"
+						}
+					],
+					"Visible": true
+				}
+			]
+		}
+	],
+	"Target": "",
+	"_Type": "Page",
+	"_Name": "JustificacionPage",
+	"Caption": "Motivo",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Check-In",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/SkyCM_V2/Actions/Checks/CheckJustificacionNoCoordenadas.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	},
+	"PrefersLargeCaption": true
+}

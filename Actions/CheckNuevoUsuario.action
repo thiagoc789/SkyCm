@@ -1,0 +1,16 @@
+{
+	"OnFailure": "/SkyCM_V2/Actions/Message/RegistrarNuevoUsuarioFields.action",
+	"OnSuccess": "/SkyCM_V2/Actions/OData/RegistrarNuevoUsuario.action",
+	"RequiredFields": [
+		"FC_PERNR",
+		"FC_PERNR_SCP",
+		"FC_USERTY",
+		"FC_NACHN",
+		"FC_NATIO",
+		"FC_VORNA",
+		"FC_USERID",
+		"FC_VKGRP",
+		"FC_VKORG"
+	],
+	"_Type": "Action.Type.CheckRequiredFields"
+}

@@ -1,0 +1,53 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/SkyCM_V2/Actions/Checks/CheckObjetivoVisita.action",
+				"Position": "Right",
+				"Caption": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "CheckinVisita",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Caption",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/Latitud.rule.js",
+							"_Name": "FC_LAT",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Caption",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/Longitud.rule.js",
+							"_Name": "FC_LON",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				}
+			],
+			"Target": "",
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"Target": "",
+	"_Name": "CheckinVisita",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

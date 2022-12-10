@@ -1,0 +1,116 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Target": "",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton1",
+							"IsVisible": true,
+							"Title": "Reinicializar",
+							"Alignment": "Center",
+							"OnPress": "/SkyCM_V2/Actions/Service/InitializeOffline2.0.action"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Title": "Buscar Actualizacion",
+							"Alignment": "Center",
+							"OnPress": "/SkyCM_V2/Actions/Service/ActualizarStartedMessage.action"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton2",
+							"IsVisible": true,
+							"Title": "Validar información por sincronizar",
+							"Alignment": "Center",
+							"OnPress": "/SkyCM_V2/Rules/Mexico/ValidarCambiosPendientes.js"
+						},
+						{
+							"Target": "",
+							"Value": "SINCRONIZACION MANUAL",
+							"_Type": "Control.Type.FormCell.Title",
+							"_Name": "FormCellTitle0",
+							"IsEditable": true,
+							"IsVisible": true
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"Target": "",
+								"_Name": "SectionObjectCell1",
+								"Title": "Sincronizar",
+								"Visible": true,
+								"Selected": false,
+								"Subhead": "Sincronice ",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/sincronizar.png"
+										}
+									],
+									"ImageIsCircular": false
+								},
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Message/MsjAdvertenciaSincronizar.action"
+							}
+						}
+					],
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "SOPORTE",
+	"Caption": "ASISTENCIA",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "   .",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/SkyCM_V2/Actions/Navigation/V2-Consulta/NavToConsulta.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"Icon": "sap-icon://upload",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/SkyCM_V2/Actions/Service/UploadOnly.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

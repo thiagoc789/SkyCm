@@ -1,0 +1,164 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/SkyCM_V2/Actions/CheckNuevoUsuario.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"Caption": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Registrar usuario",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Caption": "Información de usuario",
+					"Controls": [
+						{
+							"Caption": "Código usuario",
+							"IsEditable": true,
+							"IsVisible": true,
+							"KeyboardType": "Number",
+							"PlaceHolder": "Digite código",
+							"Target": "",
+							"_Name": "FC_PERNR",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Código usuario SAP",
+							"IsEditable": true,
+							"IsVisible": true,
+							"KeyboardType": "Default",
+							"PlaceHolder": "Digite código",
+							"Target": "",
+							"_Name": "FC_PERNR_SCP",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"AllowEmptySelection": true,
+							"AllowMultipleSelection": false,
+							"Caption": "Tipo de usuario",
+							"IsEditable": true,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"IsSelectedSectionEnabled": false,
+							"IsVisible": true,
+							"PickerItems": [
+								{
+									"ObjectCell": {
+										"DetailImageIsCircular": false,
+										"Icons": [],
+										"PreserveIconStackSpacing": "false",
+										"Styles": {},
+										"Subhead": "Acceso con permisos",
+										"Title": "Administrador"
+									},
+									"ReturnValue": "ADMN"
+								},
+								{
+									"ObjectCell": {
+										"DetailImageIsCircular": false,
+										"Icons": [],
+										"PreserveIconStackSpacing": "false",
+										"Styles": {},
+										"Subhead": "Acceso limitado",
+										"Title": "Usuario"
+									},
+									"ReturnValue": "MAIL"
+								}
+							],
+							"PickerPrompt": "Por favor selecciona un valor",
+							"Target": "",
+							"_Name": "FC_USERTY",
+							"_Type": "Control.Type.FormCell.ListPicker"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Caption": "Datos personales",
+					"Controls": [
+						{
+							"Caption": "Nombres",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Digíte texto",
+							"Target": "",
+							"_Name": "FC_VORNA",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Apellidos",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Digíte texto",
+							"Target": "",
+							"_Name": "FC_NACHN",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Nacionalidad",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Digíte texto",
+							"Target": "",
+							"Value": "CO",
+							"_Name": "FC_NATIO",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Caption": "Información laboral",
+					"Controls": [
+						{
+							"Caption": "Correo electrónico",
+							"IsEditable": true,
+							"IsVisible": true,
+							"KeyboardType": "Email",
+							"PlaceHolder": "Digíte texto",
+							"Target": "",
+							"_Name": "FC_USERID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Grupo de ventas",
+							"IsEditable": true,
+							"IsVisible": true,
+							"KeyboardType": "Number",
+							"PlaceHolder": "Digíte valor",
+							"Target": "",
+							"_Name": "FC_VKGRP",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Organización de ventas",
+							"IsEditable": true,
+							"IsVisible": true,
+							"KeyboardType": "Number",
+							"PlaceHolder": "Digíte valor",
+							"Target": "",
+							"_Name": "FC_VKORG",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				}
+			],
+			"Target": "",
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"Target": "",
+	"_Name": "RegistrarUsuarioPage",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

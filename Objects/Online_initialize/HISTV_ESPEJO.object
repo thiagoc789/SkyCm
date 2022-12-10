@@ -1,0 +1,114 @@
+{
+	"Service": "/SkyCM_V2/Services/Online_initialize.service",
+	"Collection": [
+		"HISTV_ESPEJO"
+	],
+	"Properties": [
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "ID_VISITA"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "KUNNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "KUNN2"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "BUKRS"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "NAME1"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PERNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PERNR_SCP"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "MES"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "ANO"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "HORA"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "FIN"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "DURACION"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "ID_OBJETIVO"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "OBJ_CUMPL"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "OBSERVACION"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "ID_CAMP"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "ESTADO"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "FECHA"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "JUSTIF"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "LON_VENDOR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "LAT_VENDOR"
+		}
+	],
+	"_Name": "HISTV_ESPEJO"
+}

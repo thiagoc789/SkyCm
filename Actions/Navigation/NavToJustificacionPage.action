@@ -1,0 +1,6 @@
+{
+	"ModalPage": false,
+	"NavigationType": "Cross",
+	"PageToOpen": "/SkyCM_V2/Pages/JustificacionPage.page",
+	"_Type": "Action.Type.Navigation"
+}

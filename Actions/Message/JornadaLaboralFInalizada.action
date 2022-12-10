@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"OnSuccess": "/SkyCM_V2/Rules/Mexico/RuleMainMexico.js",
+	"Message": "Jornada Laboral Finalizada",
+	"Duration": 2,
+	"Animated": true
+}

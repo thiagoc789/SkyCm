@@ -1,0 +1,108 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "/SkyCM_V2/Rules/V2-Consulta/Rule_TraerPernr.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "PERNR_CONSUL",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Caption",
+							"PlaceHolder": "PlaceHolder"
+						}
+					],
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"_Type": "Section.Type.ObjectCollection",
+					"_Name": "SectionObjectCollection0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"_Name": "SectionObjectCell0",
+								"Title": "Estados de pedido",
+								"Visible": true,
+								"Subhead": "Consulte el estado del pedido",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/EstadoPedidos.png"
+										}
+									],
+									"ImageIsCircular": false
+								},
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/V2-Consulta/NavToEstadoPedido.action"
+							}
+						},
+						{
+							"ObjectCell": {
+								"_Name": "SectionObjectCell2",
+								"Title": "Inventario",
+								"Visible": true,
+								"Subhead": "Consulte el inventario",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/Inventario.png"
+										}
+									],
+									"ImageIsCircular": false
+								},
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/V2-Consulta/NavToInventario.action"
+							}
+						},
+						{
+							"ObjectCell": {
+								"_Name": "SectionObjectCell3",
+								"Title": "Estado de cartera",
+								"Visible": true,
+								"Subhead": "Consulte estado de cartera",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/EstadoCartera.png"
+										}
+									],
+									"ImageIsCircular": false
+								},
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/V2-Consulta/NavToEstadoCartera.action"
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando información..."
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Consultas",
+	"Caption": "Consultas",
+	"OnLoaded": "/SkyCM_V2/Rules/V2-Consulta/TraerPernr2.js",
+	"PrefersLargeCaption": true
+}

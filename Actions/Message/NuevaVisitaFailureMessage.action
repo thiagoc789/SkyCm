@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Debes finalizar la visita antes de continuar...",
+	"Title": "Tienes una visita activa",
+	"OKCaption": "OK"
+}

@@ -1,0 +1,113 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.SimplePropertyCollection",
+					"_Name": "SectionSimplePropertyCollection0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"SimplePropertyCells": [
+						{
+							"SimplePropertyCell": {
+								"Target": "",
+								"Value": "/SkyCM_V2/Rules/MesActual.js",
+								"_Name": "SectionSimplePropertyCell0",
+								"KeyName": "Mes actual",
+								"AccessoryType": "none",
+								"Visible": true
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"_Type": "Section.Type.SimplePropertyCollection",
+					"_Name": "SectionSimplePropertyCollection1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"SimplePropertyCells": [
+						{
+							"SimplePropertyCell": {
+								"Target": "",
+								"Value": "/SkyCM_V2/Rules/CuentaVisitasRule.js",
+								"_Name": "SectionSimplePropertyCell1",
+								"KeyName": "Visitas realizadas: ",
+								"AccessoryType": "none",
+								"Visible": true
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"_Type": "Section.Type.ContactCell",
+					"Target": {
+						"Service": "/SkyCM_V2/Services/Online_initialize.service",
+						"EntitySet": "HISTV",
+						"QueryOptions": "$filter=PERNR_SCP eq '{{#Application/#AppData/UserId}}' and ANO eq '2022' and MES eq '10'&$orderby=FECHA desc"
+					},
+					"_Name": "SectionContactCellTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No hay visitas realizadas",
+						"FooterVisible": false
+					},
+					"ContactCell": {
+						"ContextMenu": {
+							"PerformFirstActionWithFullSwipe": true,
+							"Items": [
+							]
+						},
+						"DetailImage": "/SkyCM_V2/Images/visitas_realizadas.png",
+						"Headline": "{NAME1}",
+						"Subheadline": "{FECHA}",
+						"Description": "description",
+						"OnPress": "/SkyCM_V2/Actions/Navigation/NavToDetalleVisitaRealizada.action",
+						"ActivityItems": [
+							{
+								"ActivityType": "Detail",
+								"ActivityValue": ""
+							}
+						]
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Buscar"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "VisitasRealizadasPage",
+	"Caption": "Visitas realizadas",
+	"PrefersLargeCaption": true,
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem0",
+				"Caption": "ToolbarItem",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"Icon": "sap-icon://synchronize",
+				"ItemType": "Button",
+				"Width": 320,
+				"Style": "",
+				"OnPress": "/SkyCM_V2/Actions/Service/Download_visitas.action"
+			}
+		]
+	}
+}

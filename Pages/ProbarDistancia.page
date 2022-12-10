@@ -1,0 +1,82 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/SkyCM_V2/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"Caption": "Item",
+				"Visible": true
+			},
+			{
+				"IsIconCircular": false,
+				"OnPress": "/SkyCM_V2/Rules/ValidarDistancia.js",
+				"Position": "Right",
+				"Caption": "CALCULAR",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "calcular distancia",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Latitud vendedor",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "4.6443411",
+							"_Name": "FC_LAT_VEND",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Longitud Vendedor",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "-74.1495045",
+							"_Name": "FC_LONG_VEND",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Latitud Cliente",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "4.64427925",
+							"_Name": "FC_LAT_CLIEN",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Longitud cliente",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "-74.14950387",
+							"_Name": "FC_LON_CLIEN",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Controls": [],
+					"Target": "",
+					"Visible": true
+				}
+			],
+			"Target": "",
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"Target": "",
+	"_Name": "DetalleJornadaActiva",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

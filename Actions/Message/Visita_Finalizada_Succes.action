@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.BannerMessage",
+	"Message": "Visita Finalizada",
+	"Duration": 2,
+	"Animated": true
+}

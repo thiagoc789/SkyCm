@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "No se puede hacer la consulta porque no tienes internet o tu red de datos se encuentra inestable. Espera un momento e intenta de nuevo.",
+	"Title": "ATENCION",
+	"OKCaption": "OK"
+}

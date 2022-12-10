@@ -1,0 +1,140 @@
+{
+	"Target": "",
+	"Controls": [
+		{
+			"Target": "",
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Target": "",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_NitCP",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Nit:",
+							"PlaceHolder": "Digite la identificación del cliente.",
+							"KeyboardType": "Default"
+						},
+						{
+							"Target": "",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_NOMBRECP",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Nombre:",
+							"PlaceHolder": "Digite nombre o razon social",
+							"KeyboardType": "Default"
+						},
+						{
+							"Target": "",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_TELEFONOCP",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Teléfono:",
+							"PlaceHolder": "Digite teléfono del cliente.",
+							"KeyboardType": "Phone",
+							"AlternateInput": "None"
+						},
+						{
+							"Target": "",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_EMAILCP",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Email:",
+							"PlaceHolder": "Digite Email del cliente",
+							"KeyboardType": "Email"
+						},
+						{
+							"Target": "",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_DIRECCIONCP",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Dirección:",
+							"PlaceHolder": "Digite direccion del cliente"
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FC_LISTIPOCL",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Tipo de cliente",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Seleccione el tipo de cliente",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"PickerItems": [
+								"Femenino",
+								"Masculino",
+								"infantil",
+								"Baño",
+								"Interior",
+								"Industrial",
+								"Deportivo",
+								"Pijamero",
+								"Dotaciones",
+								"Control"
+							]
+						},
+						{
+							"Target": "",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_TIPOCLIENTECP",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Tipo de cliente:",
+							"PlaceHolder": "Digite tipo de cliente."
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/Longitud.rule.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_LongitudProspecto",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Longitud:"
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/Latitud.rule.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_LatitudProspecto",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Latitud:"
+						},
+						{
+							"Target": "",
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "btnGuardarCP",
+							"IsVisible": true,
+							"Title": "Guardar",
+							"Alignment": "Center",
+							"OnPress": "/SkyCM_V2/Actions/Checks/Cli_Pros/ValidarCamposVaciosCliePro.action"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando formulario... espere un momento"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "CrearClienteProspecto",
+	"Caption": "Crear Cliente Prospecto",
+	"PrefersLargeCaption": true
+}

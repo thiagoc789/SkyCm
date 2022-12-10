@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ShowActivityIndicator": false,
+	"PageToOpen": "/SkyCM_V2/Pages/DetalleClientePage.page",
+	"ModalPage": false,
+	"NavigationType": "Cross"
+}

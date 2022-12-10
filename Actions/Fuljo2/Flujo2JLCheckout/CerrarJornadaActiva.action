@@ -1,0 +1,18 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"OnSuccess": "/SkyCM_V2/Actions/Navigation/NavToMenuFJL.action",
+	"ValidationRule": "/SkyCM_V2/Rules/ValidaVisitaActXcheckoutJornadLaboral.js",
+	"ActivityIndicatorText": "",
+	"Target": {
+		"EntitySet": "WORKDAY",
+		"QueryOptions": "",
+		"ReadLink": "{@odata.readLink}",
+		"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+	},
+	"Properties": {
+		"ID_JORNADA": "Page:De#Page:-Previous/#Control:FC_ID_Jornada/#Value",
+		"PERNR": "/SkyCM_V2/Rules/CalcularJornadaDuracion.js",
+		"HORA_FIN": "#Page:-Previous/#Control:FC_HoraFin/#Value",
+		"ESTADO": "INACTIVO"
+	}
+}

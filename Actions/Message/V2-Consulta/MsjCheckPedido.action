@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "¡ Debe digitar el numero del pedido !",
+	"Title": "Atencion",
+	"OKCaption": "OK"
+}

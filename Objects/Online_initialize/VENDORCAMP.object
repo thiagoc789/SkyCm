@@ -1,0 +1,34 @@
+{
+	"Service": "/SkyCM_V2/Services/Online_initialize.service",
+	"Collection": [
+		"VENDORCAMP"
+	],
+	"Properties": [
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "ID_VENDORCAMP"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PERNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PERNR_SCP"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "ID_CAMP"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "NOM_CAMP"
+		}
+	],
+	"_Name": "VENDORCAMP"
+}

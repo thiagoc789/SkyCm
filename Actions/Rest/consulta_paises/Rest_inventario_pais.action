@@ -1,0 +1,28 @@
+{
+	"_Type": "Action.Type.RestService.SendRequest",
+	"ActionResult": {
+		"_Name": "ResultRest"
+	},
+	"OnFailure": "/SkyCM_V2/Actions/Message/V2-Consulta/MsjSinInternet.action",
+	"OnSuccess": "/SkyCM_V2/Rules/V2-Consulta/Rule_Rest_Inventario.js",
+	"Target": {
+		"Service": "/SkyCM_V2/Services/Rest_paises.service",
+		"Path": "/InvSkyVMovilPais",
+		"OutputPath": "/MT_InvSkyVMovilPFmsResp/T_InvSkyVMovilPFmsResp/T_CabeceraInvSkyVMovil",
+		"RequestProperties": {
+			"Method": "PUT",
+			"Body": {
+				"T_InvSkyVMovilPFms": [
+					{
+						"Referencia": "#Page:Inventario/#Control:FC_List_Referencia/#SelectedValue",
+						"Vendedor": "#Page:Inventario/#Control:FC_Pernr_Inv/#Value",
+						"Campocab1": "#Page:Inventario/#Control:FC_SOC/#Value"
+					}
+				]
+			},
+			"Headers": {
+				"Content-Type": "application/json"
+			}
+		}
+	}
+}

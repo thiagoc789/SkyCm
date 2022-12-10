@@ -1,0 +1,48 @@
+{
+	"Caption": "Usuarios",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ContactCell": {
+						"ActivityItems": [
+							{
+								"ActivityType": "Email",
+								"ActivityValue": "{USRID}"
+							}
+						],
+						"DetailImage": "/SkyCM_V2/Images/users.png",
+						"Headline": "{NACHN}",
+						"OnPress": "/SkyCM_V2/Actions/Navigation/NavToDetalleUserStandard.action",
+						"Subheadline": "{VORNA}"
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"Caption": "Listado de registros",
+						"UseTopPadding": false
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Buscar usuario"
+					},
+					"Target": {
+						"EntitySet": "VENDORINFO",
+						"QueryOptions": "$filter=USRTY ne 'ADMN'&$orderby=NACHN",
+						"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+					},
+					"Visible": true,
+					"_Name": "SectionContactCellTable0",
+					"_Type": "Section.Type.ContactCell"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Target": "",
+	"_Name": "UsuariosPage",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

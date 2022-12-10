@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ProgressBanner",
+	"OnSuccess": "/SkyCM_V2/Actions/Navigation/NavToGestionVisitas.action",
+	"Message": "Cargando... Espere un momento",
+	"CompletionMessage": "3",
+	"Animated": true
+}

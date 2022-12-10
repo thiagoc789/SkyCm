@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.BannerMessage",
+	"OnSuccess": "/SkyCM_V2/Actions/Fuljo2/Flujo2JL/NavToTransJLCheckin.action",
+	"Message": "Calculando Por Favor espere...",
+	"Animated": true,
+	"DismissBannerOnAction": true
+}

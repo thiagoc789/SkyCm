@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnSuccess": "/SkyCM_V2/Actions/Service/Cli_Pros/DownloadOffline_Pro.action",
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+}

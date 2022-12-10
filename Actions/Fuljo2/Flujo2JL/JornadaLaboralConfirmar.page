@@ -1,0 +1,92 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/SkyCM_V2/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"Caption": "Item",
+				"Visible": true
+			},
+			{
+				"IsIconCircular": false,
+				"OnPress": "/SkyCM_V2/Actions/Message/Mensj_inicioJornada.action",
+				"Position": "Right",
+				"Caption": "Check-In",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Confirmar Jornada Laboral",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "ID Jornada Laboral",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/CrearIDJornada.js",
+							"_Name": "FC_IDJornadaLaboral",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Código vendedor:",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Target": "",
+							"Value": "{{#Property:PERNR}}",
+							"_Name": "FC_PERNRVisita",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Código SCP:",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Target": "",
+							"Value": "#Application/#ClientData/#Property:UserId",
+							"_Name": "FC_PERNRSCPVisita",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"Caption": "Fecha:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/TraeFechaRule.js",
+							"_Name": "FC_FechaVisita",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Hora:",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/TraeHoraRule.rule.js",
+							"_Name": "FC_HoraInicio",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				}
+			],
+			"Target": "",
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"Target": "",
+	"_Name": "JornadaLabConfirmar",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"OnFailure": "/SkyCM_V2/Actions/Message/NojustificacionNoCoordenadas.action",
+	"OnSuccess": "/SkyCM_V2/Actions/Message/Cli_Pros/ProgressCreandoVisitaJustPros.action",
+	"ShowActivityIndicator": true,
+	"RequiredFields": [
+		"FC_Justificacion"
+	]
+}

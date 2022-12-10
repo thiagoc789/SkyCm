@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "¿Esta seguro que desea guardar esta dirección?",
+	"OKCaption": "OK",
+	"OnOK": "/SkyCM_V2/Actions/OData/Cli_Pros/Od_CrearSegundaDireccion.action",
+	"CancelCaption": "CANCELAR"
+}

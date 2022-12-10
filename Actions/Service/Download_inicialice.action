@@ -1,0 +1,19 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"OnFailure": "/SkyCM_V2/Rules/Mexico/RuleMainMexico.js",
+	"OnSuccess": "/SkyCM_V2/Rules/Mexico/RuleMainMexico.js",
+	"ShowActivityIndicator": false,
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"DefiningRequests": [
+		{
+			"Name": "HISTV",
+			"Query": "HISTV",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "WORKDAY",
+			"Query": "WORKDAY",
+			"AutomaticallyRetrievesStreams": false
+		}
+	]
+}

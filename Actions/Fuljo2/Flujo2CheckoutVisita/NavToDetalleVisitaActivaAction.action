@@ -1,0 +1,5 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"PageToOpen": "/SkyCM_V2/Pages/Flujo2/DetalleVisitaActiva.page",
+	"NavigationType": "Cross"
+}

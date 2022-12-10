@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "ATENCION, tienes informacion que no se ha sincronizado. Debes sincronizar antes de cerrar sesión. Si elige cerrar su sesión sin sincronizar es posible que se pierdan los datos",
+	"OKCaption": "Ir a sincronizar",
+	"OnOK": "/SkyCM_V2/Actions/Navigation/v1.1.2/NavToSoporte.action",
+	"CancelCaption": "Cerrar sesion de todos modos",
+	"OnCancel": "/SkyCM_V2/Actions/Message/MsjPreguntaCerrarSesion.action"
+}

@@ -1,0 +1,9 @@
+{
+	"ServiceUrl": "/destinations/mobileservices",
+	"DestinationName": "Online_skycm",
+	"PathSuffix": "/CatalogService",
+	"LanguageURLParam": "sap-language",
+	"OfflineEnabled": false,
+	"SourceType": "Mobile",
+	"RestService": false
+}

@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Cargando...",
+	"PageToOpen": "/SkyCM_V2/Pages/Cli_Prosp/DetalleClienteProspecto.page",
+	"NavigationType": "Cross"
+}

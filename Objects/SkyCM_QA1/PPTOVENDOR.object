@@ -1,0 +1,84 @@
+{
+	"Service": "/SkyCM_QA1/Services/SkyCM_QA1.service",
+	"Collection": [
+		"PPTOVENDOR"
+	],
+	"Properties": [
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "MANDT"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "KUNNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "BUKRS"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "VKORG"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "VTWEG"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "SPART"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PARVW"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PARZA"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PERNR"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PERNR_SCP"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "MES"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "ANO"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PLAN_VISITA"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "REAL_VISITA"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "ID_CAMP"
+		}
+	],
+	"_Name": "PPTOVENDOR"
+}

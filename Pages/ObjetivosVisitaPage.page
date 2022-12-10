@@ -1,0 +1,52 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/SkyCM_V2/Actions/Navigation/NavToCrearObjetivoPage.action",
+				"Position": "Right",
+				"SystemItem": "Add",
+				"Caption": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Objetivos de visita",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ContactCell": {
+						"ActivityItems": [
+							{
+								"ActivityType": "Detail",
+								"ActivityValue": ""
+							}
+						],
+						"Description": "{ID_OBJE}",
+						"DetailImage": "/SkyCM_V2/Images/objetivo_visita.png",
+						"Headline": "{NOM_OBJE}",
+						"OnPress": "/SkyCM_V2/Actions/Navigation/NavToDetalleObjetivo.action",
+						"Subheadline": "{DESC_OBJE}"
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Target": {
+						"EntitySet": "OBJEVISIT",
+						"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+					},
+					"Visible": true,
+					"_Name": "SectionContactCellTable0",
+					"_Type": "Section.Type.ContactCell"
+				}
+			],
+			
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Target": "",
+	"_Name": "ObjetivosVisitaPage",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

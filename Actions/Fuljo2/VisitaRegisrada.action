@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"OnSuccess": "/SkyCM_V2/Actions/Fuljo2/NavToMenuVisCheckIn.action",
+	"Message": "Visita Registrada",
+	"NumberOfLines": 2,
+	"Duration": 2,
+	"Animated": true
+}

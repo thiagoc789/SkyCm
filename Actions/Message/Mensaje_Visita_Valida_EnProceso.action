@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.BannerMessage",
+	"OnSuccess": "/SkyCM_V2/Actions/OData/CrearNuevaVisita.action",
+	"ValidationRule": "/SkyCM_V2/Rules/ValidarDistancia.js",
+	"Message": "Calculando Por Favor espere...",
+	"Duration": 5,
+	"DismissBannerOnAction": true
+}

@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"OnSuccess": "/SkyCM_V2/Actions/Message/Cli_Pros/BannerVisitaCreada.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Cargando espere un momento...",
+	"PageToOpen": "/SkyCM_V2/Pages/Main.page",
+	"ClearHistory": true,
+	"NavigationType": "Cross"
+}

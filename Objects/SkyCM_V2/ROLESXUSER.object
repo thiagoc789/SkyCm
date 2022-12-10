@@ -1,0 +1,24 @@
+{
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"Collection": [
+		"ROLESXUSER"
+	],
+	"Properties": [
+		{
+			"_Type": "Edm.String",
+			"Key": true,
+			"_Name": "ID_ROLXUSER"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "PERNR_SCP"
+		},
+		{
+			"_Type": "Edm.String",
+			"Key": false,
+			"_Name": "USER_ROL"
+		}
+	],
+	"_Name": "ROLESXUSER"
+}

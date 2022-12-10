@@ -1,0 +1,19 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"OnSuccess": "/SkyCM_V2/Actions/Navigation/NavToMenuDownl.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Registrando jornada laboral espere un momento...",
+	"Target": {
+		"EntitySet": "WORKDAY",
+		"Service": "/SkyCM_V2/Services/SkyCM_V2.service"
+	},
+	"Properties": {
+		"ESTADO": "ACTIVO",
+		"FECHA": "#Page:JornadaLabConfirmar/#Control:FC_FechaVisita/#Value",
+		"HORA_FIN": "ND",
+		"HORA_INICIO": "#Page:JornadaLabConfirmar/#Control:FC_HoraInicio/#Value",
+		"ID_JORNADA": "#Page:JornadaLabConfirmar/#Control:FC_IDJornadaLaboral/#Value",
+		"PERNR": "#Page:JornadaLabConfirmar/#Control:FC_PERNRVisita/#Value",
+		"PERNR_SCP": "#Page:JornadaLabConfirmar/#Control:FC_PERNRSCPVisita/#Value"
+	}
+}

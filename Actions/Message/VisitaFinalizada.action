@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"OnSuccess": "/SkyCM_V2/Actions/Navigation/NavtoMenuCerrarVisita.action",
+	"Message": "Visita Finalizada",
+	"Duration": 2,
+	"Animated": true
+}

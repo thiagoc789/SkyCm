@@ -1,0 +1,112 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"KeyAndValues": [
+						{
+							"Target": "",
+							"_Name": "KeyValue0",
+							"KeyName": "Total Visitas Mes :",
+							"Value": "",
+							"Visible": false
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"_Type": "Section.Type.ObjectCollection",
+					"_Name": "SectionObjectCollection0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"Target": "",
+								"_Name": "SectionObjectCell0",
+								"Title": "Visitas realizadas",
+								"Visible": true,
+								"Subhead": "Listado de visitas realizadas a clientes",
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Actions/Navigation/NavToVisitasRealizadasPage.action",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/visitas_realizadas.png"
+										}
+									],
+									"ImageIsCircular": false
+								}
+							}
+						},
+						{
+							"ObjectCell": {
+								"Target": "",
+								"_Name": "SectionObjectCell1",
+								"Title": "Objetivos de visita",
+								"Visible": false,
+								"Subhead": "Gestione los objetivos para las visitas a clientes",
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"OnPress": "/SkyCM_V2/Rules/Acceso/ObjetivosVisita.js",
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/objetivo_visita.png"
+										}
+									],
+									"ImageIsCircular": false
+								}
+							}
+						},
+						{
+							"ObjectCell": {
+								"Target": "",
+								"_Name": "SectionObjectCell2",
+								"Title": "% Avance del mes",
+								"Visible": true,
+								"Subhead": "Detalle de avance en el mes",
+								"StatusText": "/SkyCM_V2/Rules/porcentaje_visitas.js",
+								"AccessoryType": "none",
+								"PreserveIconStackSpacing": false,
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/SkyCM_V2/Images/cumplimiento.png"
+										}
+									],
+									"ImageIsCircular": false
+								}
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando informacion..."
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "GestionVisitas",
+	"Caption": "Gestión de visitas",
+	"PrefersLargeCaption": true
+}

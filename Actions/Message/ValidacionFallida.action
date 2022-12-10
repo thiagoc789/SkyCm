@@ -1,0 +1,7 @@
+{
+	"Message": "Imposible realizar Check-In.",
+	"OKCaption": "Motivo",
+	"OnOK": "/SkyCM_V2/Actions/Navigation/NavToJustificacionPage.action",
+	"Title": "Visita a cliente",
+	"_Type": "Action.Type.Message"
+}

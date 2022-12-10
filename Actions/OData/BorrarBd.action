@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.OfflineOData.Clear",
+	"OnSuccess": "/SkyCM_V2/Actions/Service/InitializeOffline.action",
+	"Service": "/SkyCM_V2/Services/SkyCM_V2.service",
+	"Force": true
+}

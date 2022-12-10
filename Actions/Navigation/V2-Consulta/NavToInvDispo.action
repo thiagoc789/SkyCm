@@ -1,0 +1,5 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"PageToOpen": "/SkyCM_V2/Pages/V2-Consultas/Inven_Ord_Dispo.page",
+	"NavigationType": "Cross"
+}

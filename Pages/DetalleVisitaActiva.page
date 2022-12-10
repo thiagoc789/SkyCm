@@ -1,0 +1,134 @@
+{
+	"Controls": [
+		{
+			"Target": "",
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Target": "",
+							"Value": "{ID_VISITA}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_IDVisita",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "ID visita:"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"Target": "",
+							"Value": "{HORA}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_HoraInicio",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Hora inicio:"
+						},
+						{
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/TraeHoraRule.rule.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_HoraFin",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Hora fin:"
+						},
+						{
+							"Target": "",
+							"Value": "{MES}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty3",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Mes:"
+						},
+						{
+							"Target": "",
+							"Value": "{ANO}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty2",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Año:"
+						},
+						{
+							"Target": "",
+							"Value": "/SkyCM_V2/Rules/CalculaDuracionVisita.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_Duracion",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "Duración",
+							"PlaceHolder": "PlaceHolder"
+						}
+					],
+					"Target": "",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"Target": "",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch",
+							"_Name": "FC_ObjCumplido",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Objetivo Cumplido"
+						},
+						{
+							"Target": "",
+							"_Type": "Control.Type.FormCell.Note",
+							"_Name": "FC_Observaciones",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Digite observaciones de la visita..."
+						}
+					],
+					"Target": "",
+					"Visible": true
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando información..."
+			}
+		}
+	],
+	"Target": "",
+	"_Type": "Page",
+	"_Name": "DetalleViisitaActiva",
+	"Caption": "Detalle Visita",
+	"ActionBar": {
+		"Items": [
+			{
+				"Target": "",
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/SkyCM_V2/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"Target": "",
+				"_Name": "ActionBarItem1",
+				"Caption": "Check-Out",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/SkyCM_V2/Actions/OData/CerrarVisitaActiva_UpdateEntity.action"
+			}
+		],
+		"_Name": "ActionBar0"
+	},
+	"PrefersLargeCaption": true
+}

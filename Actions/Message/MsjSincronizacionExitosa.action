@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.BannerMessage",
+	"Message": "Sincronizacion EXITOSA",
+	"Duration": 3,
+	"Animated": true
+}

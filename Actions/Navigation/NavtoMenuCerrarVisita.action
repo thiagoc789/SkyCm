@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"OnSuccess": "/SkyCM_V2/Rules/Mexico/RuleMainMexico.js",
+	"PageToOpen": "/SkyCM_V2/Pages/Main.page",
+	"ClearHistory": true,
+	"NavigationType": "Inner"
+}

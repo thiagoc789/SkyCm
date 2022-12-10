@@ -1,0 +1,64 @@
+{
+	"Caption": "Detalle de usuario",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [
+							{
+								"Text": "{PERNR_SCP}"
+							}
+						],
+						"DetailImage": "/SkyCM_V2/Images/users.png",
+						"DetailImageIsCircular": false,
+						"Footnote": "{USRID}",
+						"HeadlineText": "{NACHN}",
+						"Subhead": "{VORNA}"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader1",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"Buttons": [
+						{
+							"OnPress": "/SkyCM_V2/Actions/OData/OtorgaPermisosAdmin.action",
+							"Target": "",
+							"Alignment": "Center",
+							"Title": "Otorgar permisos de administrador",
+							"Visible": true
+						},
+						{
+							"OnPress": "/SkyCM_V2/Rules/EliminarUsuario.js",
+							"Styles": {
+								"Button": "MyButton"
+							},
+							"Target": "",
+							"Alignment": "Center",
+							"Title": "Eliminar usuario",
+							"Visible": true
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Header": {
+						"Caption": "Opciones",
+						"UseTopPadding": false
+					},
+					"Target": "",
+					"Visible": true,
+					"_Name": "SectionButtonTable0",
+					"_Type": "Section.Type.ButtonTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Target": "",
+	"_Name": "DetalleUsersStandard",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}

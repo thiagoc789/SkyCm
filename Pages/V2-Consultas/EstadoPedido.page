@@ -1,0 +1,81 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_Num_Pedido",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Numero de pedido:",
+							"PlaceHolder": "Digite el numero de pedido",
+							"KeyboardType": "Default"
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/V2-Consulta/TraerPernr2.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Fc_Pernr2Pedidos",
+							"IsEditable": false,
+							"IsVisible": false,
+							"Caption": "PERNR2"
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/V2-Consulta/Rule_TraerPernr.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_PERNR_PEDIDOS",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "PERNR",
+							"KeyboardType": "Default"
+						},
+						{
+							"Value": "/SkyCM_V2/Rules/V2-Consulta/RuleSociedad.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FC_SOC",
+							"IsEditable": true,
+							"IsVisible": false,
+							"Caption": "Sociedad",
+							"PlaceHolder": "PlaceHolder"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1"
+				},
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Title": "Buscar",
+							"Alignment": "Center",
+							"OnPress": "/SkyCM_V2/Actions/Checks/V2-Consulta/CheckValidarPedido.action"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Cargando..."
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "EstadoPedido",
+	"Caption": "Numero de pedido",
+	"PrefersLargeCaption": true
+}

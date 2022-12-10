@@ -1,0 +1,8 @@
+{
+	"AppId": "com.skycm.productivo",
+	"ServiceUrl": "/destinations/mobileservices",
+	"DestinationName": "Rest_Paises",
+	"OfflineEnabled": false,
+	"SourceType": "Mobile",
+	"RestService": true
+}

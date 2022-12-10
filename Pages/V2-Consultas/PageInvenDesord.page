@@ -1,0 +1,55 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": "#Page:Main/#ClientData/#Property:Inventario",
+					"_Name": "ObjecTableDesordenada",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "Color: {Color}",
+						"Subhead": "Cant disponible: {CantDisponible}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://activity-items"
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Selected": false
+					},
+					"Search": {
+						"Enabled": true
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PageInvenDesord",
+	"Caption": "#Page:Inventario/#Control:FC_List_Referencia/#SelectedValue",
+	"PrefersLargeCaption": true
+}

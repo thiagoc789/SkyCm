@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Por favor tenga en cuenta que esta sincronización puede tardar varios minutos ya que es una descarga completa de los datos del servidor por lo tanto asegúrese de tener una conexión estable a internet.",
+	"Title": "ATENCION",
+	"OKCaption": "OK",
+	"OnOK": "/SkyCM_V2/Actions/Service/SyncStartedMessage.action",
+	"CancelCaption": "Cancelar"
+}

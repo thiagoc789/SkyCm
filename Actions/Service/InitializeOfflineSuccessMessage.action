@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.ToastMessage",
+	"OnSuccess": "/SkyCM_V2/Rules/V2-Consulta/MensajeVisita/EjecutarMensaje.js",
+	"Message": "Application data service initialized",
+	"Duration": 1,
+	"IsIconHidden": true,
+	"Animated": true
+}

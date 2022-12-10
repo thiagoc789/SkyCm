@@ -1,0 +1,103 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/SkyCM_V2/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"Caption": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Detalle de visita",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"BodyText": "{FECHA}",
+						"DetailImage": "/SkyCM_V2/Images/visitasxcampana.png",
+						"DetailImageIsCircular": false,
+						"Footnote": "Información de visita de campaña realizada a cliente",
+						"HeadlineText": "{NAME1}",
+						"Subhead": "{ID_VISITA}"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Mes:",
+							"Target": "",
+							"Value": "{{#Property:MES}}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Año:",
+							"Target": "",
+							"Value": "{{#Property:ANO}}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Hora inicio:",
+							"Target": "",
+							"Value": "{{#Property:HORA}}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Hora fin:",
+							"Target": "",
+							"Value": "{{#Property:FIN}}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Duración:",
+							"Target": "",
+							"Value": "{{#Property:DURACION}}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Visible": true,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Observaciones:",
+							"Target": "",
+							"Value": "{{#Property:OBSERVACION}}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"MaxItemCount": 1,
+					"Visible": true,
+					"_Name": "SectionKeyValue1",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Target": "",
+	"_Name": "DetalleVisitaRealizadaxCampana",
+	"_Type": "Page",
+	"PrefersLargeCaption": true
+}
